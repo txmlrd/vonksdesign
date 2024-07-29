@@ -134,98 +134,82 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
       <main className='justify-center debu'>
         <Navbar />
 
-        <ScrollTrigger
-          onEnter={() => {
-            setOpeningOn(true);
-          }}
-          onExit={() => {
-            setOpeningOn(false);
-          }}
-        >
-          {/* START LANDING PAGE */}
-          <section className='bg-warna-abu'>
-            <div
-              className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
-              style={{
-                backgroundImage: "url('/images/pagecover/landingpage.png')",
-              }}
+        {/* START LANDING PAGE */}
+        <section className='bg-warna-abu'>
+          <div
+            className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
+            style={{
+              backgroundImage: "url('/images/pagecover/landingpage.png')",
+            }}
+          >
+            <motion.p
+              initial='hidden'
+              animate={openingOn ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              className='text-center md:text-2xl font-thin font-futura tracking-[0.90em]'
             >
-              <motion.p
-                initial='hidden'
-                animate={openingOn ? 'visible' : 'hidden'}
-                variants={slideUpWithBlur}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                className='text-center md:text-2xl font-thin font-futura tracking-[0.90em]'
-              >
-                VONK's DESIGN
-              </motion.p>
-              <motion.div
-                initial='hidden'
-                animate={openingOn ? 'visible' : 'hidden'}
-                variants={slideUpWithBlur}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                className='flex flex-col justify-center items-center'
-              >
-                <h1 className='text-center mt-4 font-black text-6xl xl:text-8xl md:text-7xl font-helvetica'>
-                  TURNING IDEAS INTO <br /> REALITY
-                </h1>
-                <p className='w-3/4 font-helvetica text-center md:text-xl pt-10'>
-                  We specialize in providing top-notch contracting services for
-                  residential and commercial projects.
-                </p>
-              </motion.div>
-              <motion.a
-                href='/projects'
-                initial='hidden'
-                animate={openingOn ? 'visible' : 'hidden'}
-                variants={slideUpWithBlur}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-              >
-                <Button className='rounded-none bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white px-10 py-3 mt-10'>
-                  VIEW PROJECTS
-                </Button>
-              </motion.a>
-            </div>
-          </section>
-        </ScrollTrigger>
+              VONK's DESIGN
+            </motion.p>
+            <motion.div
+              initial='hidden'
+              animate={openingOn ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              className='flex flex-col justify-center items-center'
+            >
+              <h1 className='text-center mt-4 font-black text-6xl xl:text-8xl md:text-7xl font-helvetica'>
+                TURNING IDEAS INTO <br /> REALITY
+              </h1>
+              <p className='w-3/4 font-helvetica text-center md:text-xl pt-10'>
+                We specialize in providing top-notch contracting services for
+                residential and commercial projects.
+              </p>
+            </motion.div>
+            <motion.a
+              href='/projects'
+              initial='hidden'
+              animate={openingOn ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
+              <Button className='rounded-none bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white px-10 py-3 mt-10'>
+                VIEW PROJECTS
+              </Button>
+            </motion.a>
+          </div>
+        </section>
+
         {/* END LANDING PAGE */}
 
         {/* START COMPANY VALUE  */}
 
-        <ScrollTrigger
-          onEnter={() => {
-            setCompanyValueOn(true);
-          }}
-          onExit={() => {
-            setCompanyValueOn(false);
-          }}
-        >
-          <section className='bg-warna-abu'>
-            <div className='flex md:flex-row flex-col md:space-y-0 space-y-10 xl:scale-100 scale-90 justify-center items-center bg-warna-abu text-white py-32'>
-              <motion.div
-                initial='hidden'
-                animate={companyValueOn ? 'visible' : 'hidden'}
-                variants={slideUpWithBlur}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                onClick={handlePopupOpen}
-                className='hover:scale-y-125 cursor-pointer transition-all group duration-300 rounded-lg hover:bg-warna-gold py-10 flex flex-col justify-center items-center'
-              >
-                <div className=' pb-5 group-hover:scale-110 transition-all duration-300 group-hover:-rotate-3 '>
-                  <TfiWrite
-                    size={100}
-                    className='text-warna-gold group-hover:text-warna-abu '
-                  />
-                </div>
+        <section className='bg-warna-abu'>
+          <div className='flex md:flex-row flex-col md:space-y-0 space-y-10 xl:scale-100 scale-90 justify-center items-center bg-warna-abu text-white py-32'>
+            <motion.div
+              initial='hidden'
+              animate={companyValueOn ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              onClick={handlePopupOpen}
+              className='hover:scale-y-125 cursor-pointer transition-all group duration-300 rounded-lg hover:bg-warna-gold py-10 flex flex-col justify-center items-center'
+            >
+              <div className=' pb-5 group-hover:scale-110 transition-all duration-300 group-hover:-rotate-3 '>
+                <TfiWrite
+                  size={100}
+                  className='text-warna-gold group-hover:text-warna-abu '
+                />
+              </div>
 
-                <h1 className=' font-helvetica text-2xl group-hover:text-warna-abu font-bold'>
-                  Design Consultation
-                </h1>
-                <p className=' font-helvetica text-center w-3/4 group-hover:text-warna-abu '>
-                  Collaborate with our expert designers to conceptualize and
-                  plan your project.
-                </p>
-              </motion.div>
-              {/* <div className='flex flex-col justify-center items-center '>
+              <h1 className=' font-helvetica text-2xl group-hover:text-warna-abu font-bold'>
+                Design Consultation
+              </h1>
+              <p className=' font-helvetica text-center w-3/4 group-hover:text-warna-abu '>
+                Collaborate with our expert designers to conceptualize and plan
+                your project.
+              </p>
+            </motion.div>
+            {/* <div className='flex flex-col justify-center items-center '>
               <div className='pb-5'>
                 <PiProjectorScreenChart
                   size={100}
@@ -241,215 +225,207 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                 transparent management processes.
               </p>
             </div> */}
-              <motion.div
-                initial='hidden'
-                animate={companyValueOn ? 'visible' : 'hidden'}
-                variants={slideUpWithBlur}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
-                onClick={handlePopupConstructionOpen}
-                className='hover:scale-125 cursor-pointer transition-all group duration-300 rounded-lg hover:bg-warna-gold py-10  flex flex-col justify-center items-center'
-              >
-                <div className=' pb-5 group-hover:scale-110 transition-all duration-300 group-hover:-rotate-3 '>
-                  <IoConstructOutline
-                    size={100}
-                    className='text-warna-gold group-hover:text-warna-abu '
-                  />
-                </div>
+            <motion.div
+              initial='hidden'
+              animate={companyValueOn ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              onClick={handlePopupConstructionOpen}
+              className='hover:scale-125 cursor-pointer transition-all group duration-300 rounded-lg hover:bg-warna-gold py-10  flex flex-col justify-center items-center'
+            >
+              <div className=' pb-5 group-hover:scale-110 transition-all duration-300 group-hover:-rotate-3 '>
+                <IoConstructOutline
+                  size={100}
+                  className='text-warna-gold group-hover:text-warna-abu '
+                />
+              </div>
 
-                <h1 className=' font-helvetica text-2xl group-hover:text-warna-abu font-bold'>
-                  Construction
-                </h1>
-                <p className=' font-helvetica text-center w-3/4 group-hover:text-warna-abu '>
-                  Benefit from our skilled craftsmen and advanced construction
-                  techniques.
+              <h1 className=' font-helvetica text-2xl group-hover:text-warna-abu font-bold'>
+                Construction
+              </h1>
+              <p className=' font-helvetica text-center w-3/4 group-hover:text-warna-abu '>
+                Benefit from our skilled craftsmen and advanced construction
+                techniques.
+              </p>
+            </motion.div>
+          </div>
+
+          {isPopupOpen && (
+            <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
+              <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
+                <AiOutlineClose
+                  size={24}
+                  className='absolute top-4 right-4 cursor-pointer'
+                  onClick={handlePopupClose}
+                />
+                <h2 className='text-2xl font-bold mb-4'>
+                  Hitung Biaya Jasa Design
+                </h2>
+                <p className='mb-4'>
+                  Hitung biaya design anda gratis yuk mulai dengan menghubungi
+                  WhatsApp ini.
                 </p>
-              </motion.div>
+                <a
+                  href='https://wa.me/1234567890' // Replace with your WhatsApp number
+                  className='text-blue-500 underline'
+                >
+                  Chat with us on WhatsApp
+                </a>
+              </div>
             </div>
+          )}
 
-            {isPopupOpen && (
-              <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
-                <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
-                  <AiOutlineClose
-                    size={24}
-                    className='absolute top-4 right-4 cursor-pointer'
-                    onClick={handlePopupClose}
-                  />
-                  <h2 className='text-2xl font-bold mb-4'>
-                    Hitung Biaya Jasa Design
-                  </h2>
-                  <p className='mb-4'>
-                    Hitung biaya design anda gratis yuk mulai dengan menghubungi
-                    WhatsApp ini.
-                  </p>
-                  <a
-                    href='https://wa.me/1234567890' // Replace with your WhatsApp number
-                    className='text-blue-500 underline'
-                  >
-                    Chat with us on WhatsApp
-                  </a>
-                </div>
+          {isPopupConstructionOpen && (
+            <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
+              <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
+                <AiOutlineClose
+                  size={24}
+                  className='absolute top-4 right-4 cursor-pointer'
+                  onClick={handlePopupConstructionClose}
+                />
+                <h2 className='text-2xl font-bold mb-4'>
+                  Hitung Biaya Jasa Arsitek
+                </h2>
+                <p className='mb-4'>
+                  Hitung biaya design anda gratis yuk mulai dengan menghubungi
+                  WhatsApp ini.
+                </p>
+                <a
+                  href='https://wa.me/1234567890' // Replace with your WhatsApp number
+                  className='text-blue-500 underline'
+                >
+                  Chat with us on WhatsApp
+                </a>
               </div>
-            )}
-
-            {isPopupConstructionOpen && (
-              <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
-                <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
-                  <AiOutlineClose
-                    size={24}
-                    className='absolute top-4 right-4 cursor-pointer'
-                    onClick={handlePopupConstructionClose}
-                  />
-                  <h2 className='text-2xl font-bold mb-4'>
-                    Hitung Biaya Jasa Arsitek
-                  </h2>
-                  <p className='mb-4'>
-                    Hitung biaya design anda gratis yuk mulai dengan menghubungi
-                    WhatsApp ini.
-                  </p>
-                  <a
-                    href='https://wa.me/1234567890' // Replace with your WhatsApp number
-                    className='text-blue-500 underline'
-                  >
-                    Chat with us on WhatsApp
-                  </a>
-                </div>
-              </div>
-            )}
-          </section>
-        </ScrollTrigger>
+            </div>
+          )}
+        </section>
 
         {/* END COMPANY VALUE */}
 
         {/* START LANDING PAGE OUR MISSION */}
-        <ScrollTrigger
-          onEnter={() => {
-            setOurMissionOn(true);
-          }}
-          onExit={() => {
-            setOurMissionOn(false);
-          }}
+
+        <motion.section
+          initial='hidden'
+          animate={ourMissionOn ? 'visible' : 'hidden'}
+          variants={slideUpWithBlur}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className=' max-w-screen-2xl mx-auto flex xl:flex-row flex-col items-center justify-center p-10 md:p-20'
         >
-          <motion.section
-            initial='hidden'
-            animate={ourMissionOn ? 'visible' : 'hidden'}
-            variants={slideUpWithBlur}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-            className=' max-w-screen-2xl mx-auto flex xl:flex-row flex-col items-center justify-center p-10 md:p-20'
-          >
-            <div className=' flex xl:hidden flex-col space-y-1 pb-10 xl:pb-0'>
+          <div className=' flex xl:hidden flex-col space-y-1 pb-10 xl:pb-0'>
+            <h1 className='text-4xl font-helvetica font-bold'>
+              Our mission is to build lasting relationships through exceptional
+              craftsmanship and service.
+            </h1>
+            <div className='w-1/4 border-warna-gold rounded-xl border-2'></div>
+          </div>
+          <div className=' xl:w-1/2 w-full xl:mr-28 flex justify-center items-center  hover:cursor-grab'>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1}
+              // onSlideChange={() => console.log('slide change')}
+              // onSwiper={(swiper) => console.log(swiper)}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className='mySwiper'
+            >
+              <SwiperSlide>
+                <Image
+                  src='/images/pagecover/landingpage.png'
+                  alt='Landing Page'
+                  width={700}
+                  height={500}
+                  className='rounded-xl'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src='/images/pagecover/landingpage.png'
+                  alt='Landing Page'
+                  width={700}
+                  height={500}
+                  className='rounded-xl'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src='/images/pagecover/landingpage.png'
+                  alt='Landing Page'
+                  width={700}
+                  height={500}
+                  className='rounded-xl'
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src='/images/pagecover/landingpage.png'
+                  alt='Landing Page'
+                  width={700}
+                  height={500}
+                  className='rounded-xl'
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className=' flex flex-col w-full xl:w-1/2 items-start space-y-10'>
+            <div className='hidden xl:flex flex-col space-y-1 w-3/4'>
               <h1 className='text-4xl font-helvetica font-bold'>
                 Our mission is to build lasting relationships through
                 exceptional craftsmanship and service.
               </h1>
               <div className='w-1/4 border-warna-gold rounded-xl border-2'></div>
             </div>
-            <div className=' xl:w-1/2 w-full xl:mr-28 flex justify-center items-center  hover:cursor-grab'>
-              <Swiper
-                spaceBetween={10}
-                slidesPerView={1}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Pagination]}
-                className='mySwiper'
-              >
-                <SwiperSlide>
-                  <Image
-                    src='/images/pagecover/landingpage.png'
-                    alt='Landing Page'
-                    width={700}
-                    height={500}
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src='/images/pagecover/landingpage.png'
-                    alt='Landing Page'
-                    width={700}
-                    height={500}
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src='/images/pagecover/landingpage.png'
-                    alt='Landing Page'
-                    width={700}
-                    height={500}
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src='/images/pagecover/landingpage.png'
-                    alt='Landing Page'
-                    width={700}
-                    height={500}
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-              </Swiper>
-            </div>
-            <div className=' flex flex-col w-full xl:w-1/2 items-start space-y-10'>
-              <div className='hidden xl:flex flex-col space-y-1 w-3/4'>
-                <h1 className='text-4xl font-helvetica font-bold'>
-                  Our mission is to build lasting relationships through
-                  exceptional craftsmanship and service.
+            <div className=' gap-10 grid grid-cols-2 grid-row-4'>
+              <div className=''>
+                <h1 className='font-helvetica font-bold text-2xl'>
+                  30+ Years Experience
                 </h1>
-                <div className='w-1/4 border-warna-gold rounded-xl border-2'></div>
+                <p>
+                  Leveraging decades of expertise to deliver exceptional
+                  results, since 1994. Our extensive experience ensures that
+                  every project is completed to the highest standards of quality
+                  and professionalism.
+                </p>
               </div>
-              <div className=' gap-10 grid grid-cols-2 grid-row-4'>
-                <div className=''>
-                  <h1 className='font-helvetica font-bold text-2xl'>
-                    30+ Years Experience
-                  </h1>
-                  <p>
-                    Leveraging decades of expertise to deliver exceptional
-                    results, since 1994. Our extensive experience ensures that
-                    every project is completed to the highest standards of
-                    quality and professionalism.
-                  </p>
-                </div>
-                <div className=''>
-                  <h1 className='font-helvetica font-bold text-2xl'>
-                    50+ Project
-                  </h1>
-                  <p>
-                    Providing detailed and accurate budget plans to ensure
-                    financial transparency and efficiency. Our diverse portfolio
-                    showcases our ability to handle projects of varying scales
-                    and complexities.
-                  </p>
-                </div>
-                <div className=''>
-                  <h1 className='font-helvetica font-bold text-2xl'>
-                    100+ Satisfied Clients
-                  </h1>
-                  <p>
-                    We have built a strong reputation based on trust and client
-                    satisfaction. Over 100 clients have chosen Vonk Design for
-                    their projects, and many continue to work with us for their
-                    ongoing needs.
-                  </p>
-                </div>
-                <div className=''>
-                  <h1 className='font-helvetica font-bold text-2xl'>
-                    10+ Expert Teams
-                  </h1>
-                  <p>
-                    Our firm comprises over 10 specialized teams, each focusing
-                    on different aspects of design and construction. This allows
-                    us to provide comprehensive services that cover every detail
-                    of a project.
-                  </p>
-                </div>
+              <div className=''>
+                <h1 className='font-helvetica font-bold text-2xl'>
+                  50+ Project
+                </h1>
+                <p>
+                  Providing detailed and accurate budget plans to ensure
+                  financial transparency and efficiency. Our diverse portfolio
+                  showcases our ability to handle projects of varying scales and
+                  complexities.
+                </p>
+              </div>
+              <div className=''>
+                <h1 className='font-helvetica font-bold text-2xl'>
+                  100+ Satisfied Clients
+                </h1>
+                <p>
+                  We have built a strong reputation based on trust and client
+                  satisfaction. Over 100 clients have chosen Vonk Design for
+                  their projects, and many continue to work with us for their
+                  ongoing needs.
+                </p>
+              </div>
+              <div className=''>
+                <h1 className='font-helvetica font-bold text-2xl'>
+                  10+ Expert Teams
+                </h1>
+                <p>
+                  Our firm comprises over 10 specialized teams, each focusing on
+                  different aspects of design and construction. This allows us
+                  to provide comprehensive services that cover every detail of a
+                  project.
+                </p>
               </div>
             </div>
-          </motion.section>
-        </ScrollTrigger>
+          </div>
+        </motion.section>
+
         {/* END LANDING PAGE OUR MISSION */}
 
         {/* START LATEST PROJECT */}

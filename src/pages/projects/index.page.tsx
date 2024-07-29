@@ -55,14 +55,14 @@ function Projects({ projects }: ProjectsProps) {
   const handleMouseEnter = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.autoplay.stop(); // Hentikan autoplay saat hover
-      console.log('Autoplay stopped');
+      // console.log('Autoplay stopped');
     }
   };
 
   const handleMouseLeave = () => {
     if (swiperRef.current) {
       swiperRef.current.swiper.autoplay.start(); // Mulai autoplay saat keluar hover
-      console.log('Autoplay resumed');
+      // console.log('Autoplay resumed');
     }
   };
 

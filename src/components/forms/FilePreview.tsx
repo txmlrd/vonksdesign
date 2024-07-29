@@ -1,9 +1,6 @@
 import { ExternalLink, Eye, Image as ImageIcon, Paperclip } from 'lucide-react';
 import { X } from 'lucide-react';
 import * as React from 'react';
-import Lightbox from 'react-image-lightbox-rotation';
-
-import 'react-image-lightbox-rotation/style.css';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
@@ -77,23 +74,6 @@ export default function FilePreview({
           )}
         </div>
       </li>
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[index]}
-          nextSrc={images[(index + 1) % images.length]}
-          prevSrc={images[(index + images.length - 1) % images.length]}
-          rotate={0}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setIndex(
-              (prevIndex) => (prevIndex + images.length - 1) % images.length,
-            )
-          }
-          onMoveNextRequest={() =>
-            setIndex((prevIndex) => (prevIndex + 1) % images.length)
-          }
-        />
-      )}
     </>
   ) : (
     <li

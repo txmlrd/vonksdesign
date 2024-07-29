@@ -324,103 +324,95 @@ function About() {
                 </div>
               </div>
 
-              <ScrollTrigger
-                onEnter={() => setCounterOn(true)}
-                // onExit={() => setCounterOn(false)}
+              <div
+                className={`grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
+                  isInView ? 'opacity-100' : 'opacity-0 translate-y-20 blur-xl'
+                }`}
               >
-                <div
-                  className={` grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out  gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
-                    isInView
-                      ? 'opacity-100'
-                      : 'opacity-0 translate-y-20 blur-xl'
-                  }`}
-                >
-                  <div className='flex flex-col w-full xl:w-[467px]'>
-                    <div className='flex flex-row space-x-5 xl:space-x-10'>
-                      <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                        {counterOn && (
-                          <CountUp start={0} end={30} duration={5} delay={0} />
-                        )}
-                        +
-                      </h1>
-                      <h2 className='text-4xl xl:text-5xl font-bold'>
-                        Years <br />
-                        Experience
-                      </h2>
-                    </div>
-                    <p className='text-base xl:text-lg mt-5 text-justify'>
-                      Leveraging decades of expertise to deliver exceptional
-                      results, <span className='font-bold'>since 1994</span>.
-                      Our extensive experience ensures that every project is
-                      completed to the highest standards of quality and
-                      professionalism.
-                    </p>
+                <div className='flex flex-col w-full xl:w-[467px]'>
+                  <div className='flex flex-row space-x-5 xl:space-x-10'>
+                    <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
+                      {counterOn && (
+                        <CountUp start={0} end={30} duration={5} delay={0} />
+                      )}
+                      +
+                    </h1>
+                    <h2 className='text-4xl xl:text-5xl font-bold'>
+                      Years <br />
+                      Experience
+                    </h2>
                   </div>
-                  <div className='flex flex-col w-full xl:w-[467px]'>
-                    <div className='flex flex-row space-x-5 xl:space-x-10'>
-                      <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                        {counterOn && (
-                          <CountUp start={0} end={50} duration={5} delay={0} />
-                        )}
-                        +
-                      </h1>
-                      <h2 className='text-4xl xl:text-5xl font-bold'>
-                        Projects
-                        <br />
-                        Executed
-                      </h2>
-                    </div>
-                    <p className='text-base xl:text-lg mt-5 text-justify'>
-                      Providing detailed and accurate budget plans to ensure
-                      financial transparency and efficiency. Our diverse
-                      portfolio showcases our ability to handle projects of
-                      varying scales and complexities.
-                    </p>
-                  </div>
-                  <div className='flex flex-col w-full xl:w-[467px]'>
-                    <div className='flex flex-row space-x-5 xl:space-x-10'>
-                      <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                        {counterOn && (
-                          <CountUp start={0} end={100} duration={5} delay={0} />
-                        )}
-                        +
-                      </h1>
-                      <h2 className='text-4xl xl:text-5xl font-bold'>
-                        Satisfied
-                        <br />
-                        Clients
-                      </h2>
-                    </div>
-                    <p className='text-base xl:text-lg mt-5 text-justify'>
-                      We have built a strong reputation based on trust and
-                      client satisfaction. Over 100 clients have chosen Vonk
-                      Design for their projects, and many continue to work with
-                      us for their ongoing needs.
-                    </p>
-                  </div>
-                  <div className='flex flex-col w-full xl:w-[467px]'>
-                    <div className='flex flex-row space-x-5 xl:space-x-10'>
-                      <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                        {counterOn && (
-                          <CountUp start={0} end={10} duration={5} delay={0} />
-                        )}
-                        +
-                      </h1>
-                      <h2 className='text-4xl xl:text-5xl font-bold'>
-                        Expert
-                        <br />
-                        Teams
-                      </h2>
-                    </div>
-                    <p className='text-base xl:text-lg mt-5 text-justify'>
-                      Our firm comprises over 10 specialized teams, each
-                      focusing on different aspects of design and construction.
-                      This allows us to provide comprehensive services that
-                      cover every detail of a project.
-                    </p>
-                  </div>
+                  <p className='text-base xl:text-lg mt-5 text-justify'>
+                    Leveraging decades of expertise to deliver exceptional
+                    results, <span className='font-bold'>since 1994</span>. Our
+                    extensive experience ensures that every project is completed
+                    to the highest standards of quality and professionalism.
+                  </p>
                 </div>
-              </ScrollTrigger>
+                <div className='flex flex-col w-full xl:w-[467px]'>
+                  <div className='flex flex-row space-x-5 xl:space-x-10'>
+                    <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
+                      {counterOn && (
+                        <CountUp start={0} end={50} duration={5} delay={0} />
+                      )}
+                      +
+                    </h1>
+                    <h2 className='text-4xl xl:text-5xl font-bold'>
+                      Projects
+                      <br />
+                      Executed
+                    </h2>
+                  </div>
+                  <p className='text-base xl:text-lg mt-5 text-justify'>
+                    Providing detailed and accurate budget plans to ensure
+                    financial transparency and efficiency. Our diverse portfolio
+                    showcases our ability to handle projects of varying scales
+                    and complexities.
+                  </p>
+                </div>
+                <div className='flex flex-col w-full xl:w-[467px]'>
+                  <div className='flex flex-row space-x-5 xl:space-x-10'>
+                    <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
+                      {counterOn && (
+                        <CountUp start={0} end={100} duration={5} delay={0} />
+                      )}
+                      +
+                    </h1>
+                    <h2 className='text-4xl xl:text-5xl font-bold'>
+                      Satisfied
+                      <br />
+                      Clients
+                    </h2>
+                  </div>
+                  <p className='text-base xl:text-lg mt-5 text-justify'>
+                    We have built a strong reputation based on trust and client
+                    satisfaction. Over 100 clients have chosen Vonk Design for
+                    their projects, and many continue to work with us for their
+                    ongoing needs.
+                  </p>
+                </div>
+                <div className='flex flex-col w-full xl:w-[467px]'>
+                  <div className='flex flex-row space-x-5 xl:space-x-10'>
+                    <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
+                      {counterOn && (
+                        <CountUp start={0} end={10} duration={5} delay={0} />
+                      )}
+                      +
+                    </h1>
+                    <h2 className='text-4xl xl:text-5xl font-bold'>
+                      Expert
+                      <br />
+                      Teams
+                    </h2>
+                  </div>
+                  <p className='text-base xl:text-lg mt-5 text-justify'>
+                    Our firm comprises over 10 specialized teams, each focusing
+                    on different aspects of design and construction. This allows
+                    us to provide comprehensive services that cover every detail
+                    of a project.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

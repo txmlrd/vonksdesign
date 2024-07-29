@@ -13,11 +13,12 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    // Menonaktifkan aturan lain sesuai kebutuhan
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off', // Menonaktifkan aturan untuk tipe any
     'react/no-unescaped-entities': 'off',
-
     'react/display-name': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
@@ -70,7 +71,7 @@ module.exports = {
             '^\\.\\./\\.\\./\\.\\.(?!/?$)',
           ],
           ['^@/types'],
-          // other that didnt fit in
+          // other that didn't fit in
           ['^'],
         ],
       },
@@ -81,7 +82,6 @@ module.exports = {
     'next/no-html-link-for-pages': 'off',
     'next/require-public-path': 'off',
     'next/no-img-element': 'off',
-    // Add other Next.js rules here if you want to disable them
   },
   globals: {
     React: true,

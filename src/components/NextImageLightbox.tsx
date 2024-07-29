@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Lightbox from 'react-image-lightbox-rotation';
 
 import 'react-image-lightbox-rotation/style.css';
 
@@ -17,13 +16,6 @@ export default function NextImageLightbox(props: NextImageLightboxProps) {
   return (
     <div className='cursor-zoom-in'>
       <NextImage onClick={() => setIsOpen(true)} {...props} />
-      {isOpen && (
-        <Lightbox
-          mainSrc={props.src}
-          rotate={0}
-          onCloseRequest={() => setIsOpen(false)}
-        />
-      )}
     </div>
   );
 }
