@@ -1,0 +1,374 @@
+[
+  {
+    "id": "icon-mall-bali",
+    "image": {
+      "src": "/images/projects/iconmall/cover.png",
+      "alt": "Tom Visual"
+    },
+    "link": "https://iconbalimall.com/",
+    "title": "Icon Mall Bali",
+    "location": "Sanur, Bali",
+    "year": "2024",
+    "budget": "Rp. 250 Billion",
+    "description": "Icon Mall Bali is a shopping center located in Sanur, Bali. The mall is designed to be a one-stop shopping destination for the residents of Sanur and the surrounding areas. The mall will feature a wide range of retail stores, restaurants, and entertainment options, making it the perfect place to spend a day with family and friends.",
+    "gallery": [
+      {
+        "src": "/images/projects/iconmall/1.jpg",
+        "alt": "Icon Mall 1"
+      },
+      {
+        "src": "/images/projects/iconmall/2.jpeg",
+        "alt": "Icon Mall 2"
+      },
+      {
+        "src": "/images/projects/iconmall/3.jpeg",
+        "alt": "Icon Mall 3"
+      },
+      {
+        "src": "/images/projects/iconmall/4.jpg",
+        "alt": "Icon Mall 4"
+      }
+    ]
+  },
+  {
+    "id": "urban-park",
+    "image": {
+      "src": "/images/project/urbanpark.png",
+      "alt": "Urban Park"
+    },
+    "link": "https://urbanpark.com/",
+    "title": "Urban Park",
+    "location": "Jakarta, Indonesia",
+    "year": "2025",
+    "budget": "Rp. 100 Billion",
+    "description": "Urban Park is a modern recreational park in the heart of Jakarta, designed to provide green space and leisure facilities for city residents. It includes walking paths, playgrounds, and picnic areas.",
+    "gallery": [
+      {
+        "src": "/images/projects/urbanpark/1.jpeg",
+        "alt": "Urban Park 1"
+      },
+      {
+        "src": "/images/projects/urbanpark/2.jpeg",
+        "alt": "Urban Park 2"
+      },
+      {
+        "src": "/images/projects/urbanpark/3.jpeg",
+        "alt": "Urban Park 3"
+      },
+      {
+        "src": "/images/projects/urbanpark/4.jpeg",
+        "alt": "Urban Park 4"
+      }
+    ]
+  },
+  {
+    "id": "ocean-view-resort",
+    "image": {
+      "src": "/images/project/oceanview.png",
+      "alt": "Ocean View Resort"
+    },
+    "link": "https://oceanviewresort.com/",
+    "title": "Ocean View Resort",
+    "location": "Bali, Indonesia",
+    "year": "2023",
+    "budget": "Rp. 300 Billion",
+    "description": "Ocean View Resort is a luxury resort located on the coast of Bali. It offers stunning ocean views, high-end amenities, and exclusive accommodations for a premium vacation experience.",
+    "gallery": [
+      {
+        "src": "/images/projects/oceanview/1.jpeg",
+        "alt": "Ocean View 1"
+      },
+      {
+        "src": "/images/projects/oceanview/2.jpeg",
+        "alt": "Ocean View 2"
+      },
+      {
+        "src": "/images/projects/oceanview/3.jpeg",
+        "alt": "Ocean View 3"
+      },
+      {
+        "src": "/images/projects/oceanview/4.jpeg",
+        "alt": "Ocean View 4"
+      }
+    ]
+  },
+  {
+    "id": "tech-hub",
+    "image": {
+      "src": "/images/project/techhub.png",
+      "alt": "Tech Hub"
+    },
+    "link": "https://techhub.com/",
+    "title": "Tech Hub",
+    "location": "Surabaya, Indonesia",
+    "year": "2024",
+    "budget": "Rp. 150 Billion",
+    "description": "Tech Hub is a state-of-the-art technology park in Surabaya. It is designed to foster innovation and collaboration among tech companies, featuring modern office spaces and conference facilities.",
+    "gallery": [
+      {
+        "src": "/images/projects/techhub/1.jpeg",
+        "alt": "Tech Hub 1"
+      },
+      {
+        "src": "/images/projects/techhub/2.jpeg",
+        "alt": "Tech Hub 2"
+      },
+      {
+        "src": "/images/projects/techhub/3.jpeg",
+        "alt": "Tech Hub 3"
+      },
+      {
+        "src": "/images/projects/techhub/4.jpeg",
+        "alt": "Tech Hub 4"
+      }
+    ]
+  },
+  {
+    "id": "cultural-center",
+    "image": {
+      "src": "/images/project/culturalcenter.png",
+      "alt": "Cultural Center"
+    },
+    "link": "https://culturalcenter.com/",
+    "title": "Cultural Center",
+    "location": "Yogyakarta, Indonesia",
+    "year": "2026",
+    "budget": "Rp. 80 Billion",
+    "description": "The Cultural Center in Yogyakarta aims to celebrate and preserve local heritage. It includes exhibition halls, performance spaces, and educational facilities to engage visitors with the region's culture.",
+    "gallery": [
+      {
+        "src": "/images/projects/culturalcenter/1.jpeg",
+        "alt": "Cultural Center 1"
+      },
+      {
+        "src": "/images/projects/culturalcenter/2.jpeg",
+        "alt": "Cultural Center 2"
+      },
+      {
+        "src": "/images/projects/culturalcenter/3.jpeg",
+        "alt": "Cultural Center 3"
+      },
+      {
+        "src": "/images/projects/culturalcenter/4.jpeg",
+        "alt": "Cultural Center 4"
+      }
+    ]
+  },
+  {
+    "id": "lakeside-villas",
+    "image": {
+      "src": "/images/project/lakeside.png",
+      "alt": "Lakeside Villas"
+    },
+    "link": "https://lakesidevillas.com/",
+    "title": "Lakeside Villas",
+    "location": "Bandung, Indonesia",
+    "year": "2025",
+    "budget": "Rp. 200 Billion",
+    "description": "Lakeside Villas is a premium residential development situated by a serene lake in Bandung. It offers high-end villas with private lake access and lush landscaping.",
+    "gallery": [
+      {
+        "src": "/images/projects/lakeside/1.jpeg",
+        "alt": "Lakeside Villas 1"
+      },
+      {
+        "src": "/images/projects/lakeside/2.jpeg",
+        "alt": "Lakeside Villas 2"
+      },
+      {
+        "src": "/images/projects/lakeside/3.jpeg",
+        "alt": "Lakeside Villas 3"
+      },
+      {
+        "src": "/images/projects/lakeside/4.jpeg",
+        "alt": "Lakeside Villas 4"
+      }
+    ]
+  },
+  {
+    "id": "gateway-towers",
+    "image": {
+      "src": "/images/project/gateway.png",
+      "alt": "Gateway Towers"
+    },
+    "link": "https://gatewaytowers.com/",
+    "title": "Gateway Towers",
+    "location": "Medan, Indonesia",
+    "year": "2023",
+    "budget": "Rp. 400 Billion",
+    "description": "Gateway Towers is a high-rise commercial and residential project in Medan. It features modern skyscrapers with office spaces, apartments, and retail areas.",
+    "gallery": [
+      {
+        "src": "/images/projects/gateway/1.jpeg",
+        "alt": "Gateway Towers 1"
+      },
+      {
+        "src": "/images/projects/gateway/2.jpeg",
+        "alt": "Gateway Towers 2"
+      },
+      {
+        "src": "/images/projects/gateway/3.jpeg",
+        "alt": "Gateway Towers 3"
+      },
+      {
+        "src": "/images/projects/gateway/4.jpeg",
+        "alt": "Gateway Towers 4"
+      }
+    ]
+  },
+  {
+    "id": "skyline-apartments",
+    "image": {
+      "src": "/images/project/skyline.png",
+      "alt": "Skyline Apartments"
+    },
+    "link": "https://skylineapartments.com/",
+    "title": "Skyline Apartments",
+    "location": "Jakarta, Indonesia",
+    "year": "2024",
+    "budget": "Rp. 180 Billion",
+    "description": "Skyline Apartments offers luxurious living spaces with panoramic city views in Jakarta. It includes modern amenities, fitness centers, and rooftop gardens.",
+    "gallery": [
+      {
+        "src": "/images/projects/skyline/1.jpeg",
+        "alt": "Skyline Apartments 1"
+      },
+      {
+        "src": "/images/projects/skyline/2.jpeg",
+        "alt": "Skyline Apartments 2"
+      },
+      {
+        "src": "/images/projects/skyline/3.jpeg",
+        "alt": "Skyline Apartments 3"
+      },
+      {
+        "src": "/images/projects/skyline/4.jpeg",
+        "alt": "Skyline Apartments 4"
+      }
+    ]
+  },
+  {
+    "id": "seaside-resort",
+    "image": {
+      "src": "/images/project/seaside.png",
+      "alt": "Seaside Resort"
+    },
+    "link": "https://seasideresort.com/",
+    "title": "Seaside Resort",
+    "location": "Lombok, Indonesia",
+    "year": "2026",
+    "budget": "Rp. 220 Billion",
+    "description": "Seaside Resort is a premium resort located on the beautiful coast of Lombok. It offers luxury accommodations, a private beach, and exclusive dining options.",
+    "gallery": [
+      {
+        "src": "/images/projects/seaside/1.jpeg",
+        "alt": "Seaside Resort 1"
+      },
+      {
+        "src": "/images/projects/seaside/2.jpeg",
+        "alt": "Seaside Resort 2"
+      },
+      {
+        "src": "/images/projects/seaside/3.jpeg",
+        "alt": "Seaside Resort 3"
+      },
+      {
+        "src": "/images/projects/seaside/4.jpeg",
+        "alt": "Seaside Resort 4"
+      }
+    ]
+  },
+  {
+    "id": "riverwalk-complex",
+    "image": {
+      "src": "/images/project/riverwalk.png",
+      "alt": "Riverwalk Complex"
+    },
+    "link": "https://riverwalkcomplex.com/",
+    "title": "Riverwalk Complex",
+    "location": "Bali, Indonesia",
+    "year": "2025",
+    "budget": "Rp. 120 Billion",
+    "description": "Riverwalk Complex is a mixed-use development located along the river in Bali. It features residential units, commercial spaces, and recreational areas.",
+    "gallery": [
+      {
+        "src": "/images/projects/riverwalk/1.jpeg",
+        "alt": "Riverwalk Complex 1"
+      },
+      {
+        "src": "/images/projects/riverwalk/2.jpeg",
+        "alt": "Riverwalk Complex 2"
+      },
+      {
+        "src": "/images/projects/riverwalk/3.jpeg",
+        "alt": "Riverwalk Complex 3"
+      },
+      {
+        "src": "/images/projects/riverwalk/4.jpeg",
+        "alt": "Riverwalk Complex 4"
+      }
+    ]
+  },
+  {
+    "id": "mountain-view-villas",
+    "image": {
+      "src": "/images/project/mountainview.png",
+      "alt": "Mountain View Villas"
+    },
+    "link": "https://mountainviewvillas.com/",
+    "title": "Mountain View Villas",
+    "location": "Bandung, Indonesia",
+    "year": "2024",
+    "budget": "Rp. 175 Billion",
+    "description": "Mountain View Villas offers serene and luxurious living with spectacular views of the mountains. The project includes spacious villas and landscaped gardens.",
+    "gallery": [
+      {
+        "src": "/images/projects/mountainview/1.jpeg",
+        "alt": "Mountain View Villas 1"
+      },
+      {
+        "src": "/images/projects/mountainview/2.jpeg",
+        "alt": "Mountain View Villas 2"
+      },
+      {
+        "src": "/images/projects/mountainview/3.jpeg",
+        "alt": "Mountain View Villas 3"
+      },
+      {
+        "src": "/images/projects/mountainview/4.jpeg",
+        "alt": "Mountain View Villas 4"
+      }
+    ]
+  },
+  {
+    "id": "cityscape-plaza",
+    "image": {
+      "src": "/images/project/cityscape.png",
+      "alt": "Cityscape Plaza"
+    },
+    "link": "https://cityscapeplaza.com/",
+    "title": "Cityscape Plaza",
+    "location": "Medan, Indonesia",
+    "year": "2023",
+    "budget": "Rp. 280 Billion",
+    "description": "Cityscape Plaza is a large-scale commercial development in Medan. It features office towers, shopping areas, and entertainment facilities, designed to be a hub of urban activity.",
+    "gallery": [
+      {
+        "src": "/images/projects/cityscape/1.jpeg",
+        "alt": "Cityscape Plaza 1"
+      },
+      {
+        "src": "/images/projects/cityscape/2.jpeg",
+        "alt": "Cityscape Plaza 2"
+      },
+      {
+        "src": "/images/projects/cityscape/3.jpeg",
+        "alt": "Cityscape Plaza 3"
+      },
+      {
+        "src": "/images/projects/cityscape/4.jpeg",
+        "alt": "Cityscape Plaza 4"
+      }
+    ]
+  }
+]

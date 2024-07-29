@@ -13,6 +13,8 @@ import '@/styles/globals.css';
 import api from '@/lib/axios';
 
 import DismissableToast from '@/components/DismissableToast';
+import BackToTopButton from '@/components/page/BackToTopButton';
+import WhatsAppButton from '@/components/page/WhatsAppButton';
 
 Router.events.on('routeChangeStart', nProgress.start);
 Router.events.on('routeChangeError', nProgress.done);
@@ -37,6 +39,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div>
         <DismissableToast />
         <Component {...pageProps} />
+        <WhatsAppButton />
+        <BackToTopButton />
       </div>
     </QueryClientProvider>
   );
