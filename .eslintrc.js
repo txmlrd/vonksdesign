@@ -76,6 +76,12 @@ module.exports = {
       },
     ],
     //#endregion  //*======== Import Sort ===========
+
+    // Disable all Next.js rules
+    'next/no-html-link-for-pages': 'off',
+    'next/require-public-path': 'off',
+    'next/no-img-element': 'off',
+    // Add other Next.js rules here if you want to disable them
   },
   globals: {
     React: true,
