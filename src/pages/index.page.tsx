@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 //data
 import fs from 'fs';
 import Image from 'next/image';
@@ -6,11 +7,11 @@ import path from 'path';
 import { useState } from 'react';
 // Remove the import statement for 'useState'
 import * as React from 'react';
+import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiSolidQuoteLeft } from 'react-icons/bi';
 import { IoConstructOutline } from 'react-icons/io5';
 import { TfiWrite } from 'react-icons/tfi';
-import ScrollTrigger from 'react-scroll-trigger';
 import { Autoplay, Pagination } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -105,7 +106,6 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
     setIsPopupConstructionOpen(false);
   };
 
-  console.log('Reviews Data:', reviews);
   const fadeInUp = {
     hidden: { opacity: 0, y: 300 },
     visible: { opacity: 1, y: 0 },
@@ -128,6 +128,14 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
     visible: { x: 0, opacity: 1 },
   };
 
+  const ref = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  const tagLine = useInView(ref, { once: true });
+  const companyValue = useInView(ref2, { once: true });
+  const ourMission = useInView(ref3, { once: true });
+
   return (
     <Layout>
       <Seo />
@@ -135,7 +143,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
         <Navbar />
 
         {/* START LANDING PAGE */}
-        <section className='bg-warna-abu'>
+        <section ref={ref} className='bg-warna-abu'>
           <div
             className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
             style={{
@@ -144,7 +152,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
           >
             <motion.p
               initial='hidden'
-              animate={openingOn ? 'visible' : 'hidden'}
+              animate={tagLine ? 'visible' : 'hidden'}
               variants={slideUpWithBlur}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className='text-center md:text-2xl font-thin font-futura tracking-[0.90em]'
@@ -153,7 +161,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
             </motion.p>
             <motion.div
               initial='hidden'
-              animate={openingOn ? 'visible' : 'hidden'}
+              animate={tagLine ? 'visible' : 'hidden'}
               variants={slideUpWithBlur}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className='flex flex-col justify-center items-center'
@@ -169,7 +177,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
             <motion.a
               href='/projects'
               initial='hidden'
-              animate={openingOn ? 'visible' : 'hidden'}
+              animate={tagLine ? 'visible' : 'hidden'}
               variants={slideUpWithBlur}
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
@@ -184,11 +192,11 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
 
         {/* START COMPANY VALUE  */}
 
-        <section className='bg-warna-abu'>
+        <section ref={ref2} className='bg-warna-abu'>
           <div className='flex md:flex-row flex-col md:space-y-0 space-y-10 xl:scale-100 scale-90 justify-center items-center bg-warna-abu text-white py-32'>
             <motion.div
               initial='hidden'
-              animate={companyValueOn ? 'visible' : 'hidden'}
+              animate={companyValue ? 'visible' : 'hidden'}
               variants={slideUpWithBlur}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               onClick={handlePopupOpen}
@@ -227,7 +235,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
             </div> */}
             <motion.div
               initial='hidden'
-              animate={companyValueOn ? 'visible' : 'hidden'}
+              animate={companyValue ? 'visible' : 'hidden'}
               variants={slideUpWithBlur}
               transition={{ duration: 0.8, ease: 'easeOut' }}
               onClick={handlePopupConstructionOpen}
@@ -306,8 +314,9 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
         {/* START LANDING PAGE OUR MISSION */}
 
         <motion.section
+          ref={ref3}
           initial='hidden'
-          animate={ourMissionOn ? 'visible' : 'hidden'}
+          animate={ourMission ? 'visible' : 'hidden'}
           variants={slideUpWithBlur}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className=' max-w-screen-2xl mx-auto flex xl:flex-row flex-col items-center justify-center p-10 md:p-20'

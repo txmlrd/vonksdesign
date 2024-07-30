@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { useRef } from 'react';
 import CountUp from 'react-countup';
 import { FaArrowDown } from 'react-icons/fa';
-import ScrollTrigger from 'react-scroll-trigger';
 
 import Button from '@/components/buttons/Button';
 import Layout from '@/components/layout/Layout';
@@ -35,8 +34,10 @@ function About() {
   };
 
   const ref = useRef(null);
+  const ref2 = useRef(null);
 
   const isInView = useInView(ref, { once: true });
+  const isExperience = useInView(ref2, { once: true });
 
   return (
     <Layout>
@@ -325,14 +326,17 @@ function About() {
               </div>
 
               <div
-                className={`grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
-                  isInView ? 'opacity-100' : 'opacity-0 translate-y-20 blur-xl'
+                ref={ref2}
+                className={`debug grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
+                  isExperience
+                    ? 'opacity-100'
+                    : 'opacity-0 translate-y-20 blur-xl'
                 }`}
               >
                 <div className='flex flex-col w-full xl:w-[467px]'>
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                      {counterOn && (
+                      {isExperience && (
                         <CountUp start={0} end={30} duration={5} delay={0} />
                       )}
                       +
@@ -352,7 +356,7 @@ function About() {
                 <div className='flex flex-col w-full xl:w-[467px]'>
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                      {counterOn && (
+                      {isExperience && (
                         <CountUp start={0} end={50} duration={5} delay={0} />
                       )}
                       +
@@ -373,7 +377,7 @@ function About() {
                 <div className='flex flex-col w-full xl:w-[467px]'>
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                      {counterOn && (
+                      {isExperience && (
                         <CountUp start={0} end={100} duration={5} delay={0} />
                       )}
                       +
@@ -394,7 +398,7 @@ function About() {
                 <div className='flex flex-col w-full xl:w-[467px]'>
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
-                      {counterOn && (
+                      {isExperience && (
                         <CountUp start={0} end={10} duration={5} delay={0} />
                       )}
                       +
