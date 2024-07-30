@@ -327,7 +327,7 @@ function About() {
 
               <div
                 ref={ref2}
-                className={`debug grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
+                className={`grid grid-cols-1 xl:grid-cols-2 xl:grid-rows-2 transition-all duration-1000 ease-in-out gap-10 xl:gap-20 lg:gap-28 justify-items-center mt-5 xl:mt-10 font-helvetica ${
                   isExperience
                     ? 'opacity-100'
                     : 'opacity-0 translate-y-20 blur-xl'

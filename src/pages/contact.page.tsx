@@ -52,6 +52,12 @@ function Contact() {
         'We accept a variety of payment methods including credit cards, bank transfers, and PayPal. Contact us for more details.',
     },
   ];
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Layout>
       <Seo templateTitle='About' />
@@ -78,7 +84,7 @@ function Contact() {
             </div>
 
             <Button
-              // onClick={scrollToVisiMisi}
+              onClick={scrollToContact}
               className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
             >
               <FaArrowDown />
@@ -86,13 +92,13 @@ function Contact() {
           </div>
         </section>
 
-        <section className='bg-warna-abu'>
-          <div className='  flex flex-col max-w-[2000px] mx-auto  p-20  text-white items-center justify-center  '>
+        <section id='contact' className='bg-warna-abu'>
+          <div className='  flex flex-col max-w-[2000px] mx-auto  xl:p-20 p-10  text-white items-center justify-center  '>
             <div className=' w-full flex flex-col items-start pb-10'>
-              <h1 className='text-center font-helvetica text-7xl font-bold border-warna-gold '>
+              <h1 className='text-center font-helvetica xL:text-7xl text-5xl font-bold border-warna-gold '>
                 Get in touch
               </h1>
-              <p className='font-helveticalight text-xl w-1/2 pt-5'>
+              <p className='font-helveticalight text-xl xl:w-1/2 pt-5'>
                 We would love to hear from you! Whether you have a question
                 about our services, need a consultation, or want to discuss your
                 next project, our team is here to help.
@@ -106,7 +112,7 @@ function Contact() {
                   loading='lazy'
                 />
               </div>
-              <div className='pl-10 flex flex-col  w-2/3'>
+              <div className='xl:pl-10 flex flex-col xl:w-2/3'>
                 <div className='flex flex-col mb-10'>
                   <h1 className=' font-helvetica text-5xl font-bold pb-1'>
                     Call us on WhatsApp
@@ -170,16 +176,16 @@ function Contact() {
             </div>
             {/* START FAQ */}
             <section className='mt-20 w-full  '>
-              <div className=' flex flex-row'>
-                <div className='flex flex-col w-1/2'>
+              <div className=' flex flex-col xl:flex-row'>
+                <div className='flex flex-col xl:w-1/2 mb-10 xl:mb-0'>
                   <h2 className='font-thin text-5xl'>FAQ</h2>
-                  <h1 className='font-bold xl:text-8xl md:text-7xl'>
+                  <h1 className='font-bold xl:text-8xl md:text-7xl text-5xl'>
                     Frequently <br />
                     Asked <br />
                     Questions.
                   </h1>
                 </div>
-                <div className='flex flex-col w-1/2 xl:w-[1000px]'>
+                <div className='flex flex-col  xl:w-[1000px]'>
                   {faqs.map((faq, index) => (
                     <div
                       key={index}

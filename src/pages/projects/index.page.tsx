@@ -66,6 +66,12 @@ function Projects({ projects }: ProjectsProps) {
     }
   };
 
+  const scrollToProject = () => {
+    const element = document.getElementById('project');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <Layout>
       <Seo templateTitle='Projects' />
@@ -91,7 +97,7 @@ function Projects({ projects }: ProjectsProps) {
             </div>
 
             <Button
-              // onClick={scrollToVisiMisi}
+              onClick={scrollToProject}
               className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
             >
               <FaArrowDown />
@@ -99,7 +105,10 @@ function Projects({ projects }: ProjectsProps) {
           </div>
         </section>
 
-        <section className='bg-warna-abu flex justify-center xl:p-20 p-5'>
+        <section
+          id='project'
+          className='bg-warna-abu flex justify-center xl:p-20 p-5'
+        >
           <div className='w-full max-w-screen-2xl flex flex-col'>
             <div
               className='w-full h-80 md:h-96 my-5'

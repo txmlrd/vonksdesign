@@ -139,7 +139,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
   return (
     <Layout>
       <Seo />
-      <main className='justify-center debu'>
+      <main className='justify-center bg-warna-abu'>
         <Navbar />
 
         {/* START LANDING PAGE */}
@@ -319,7 +319,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
           animate={ourMission ? 'visible' : 'hidden'}
           variants={slideUpWithBlur}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className=' max-w-screen-2xl mx-auto flex xl:flex-row flex-col items-center justify-center p-10 md:p-20'
+          className=' max-w-screen-2xl text-white bg-warna-abu mx-auto flex xl:flex-row flex-col items-center justify-center p-10 md:p-20'
         >
           <div className=' flex xl:hidden flex-col space-y-1 pb-10 xl:pb-0'>
             <h1 className='text-4xl font-helvetica font-bold'>
@@ -444,7 +444,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
               <h1 className='md:text-center font-helvetica text-5xl font-bold pb-1'>
                 Latest Projects
               </h1>
-              <div className='md:w-1/6 w-1/3 border-warna-gold rounded-xl border-2 '></div>
+              <div className='md:w-1/12 w-1/6 border-warna-gold rounded-xl border-2 '></div>
               <p className='font-helvetica text-xl pt-5'>
                 Explore our extensive portfolio of completed projects. From
                 small renovations to large-scale constructions, see how we’ve
@@ -486,7 +486,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
         {/* END LATEST PROJECT */}
 
         {/* START TESTIMONIAL */}
-        <section>
+        <section className=' bg-white'>
           <div className='mx-auto max-w-[1800px] flex flex-col bg-white p-10 md:p-20 text-warna-abu'>
             <div className=' flex flex-col justify-center items-center'>
               <h1 className='text-center font-helvetica md:text-6xl text-5xl font-bold pb-1 '>

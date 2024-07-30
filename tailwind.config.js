@@ -31,8 +31,8 @@ module.exports = {
       },
       colors: {
         warna: {
-          abu: '#2C2C2C',
-          gold: '#EF3352',
+          abu: '#121216',
+          gold: '#E50A14',
         },
         primary: {
           50: 'rgb(var(--tw-color-primary-50) / <alpha-value>)',
