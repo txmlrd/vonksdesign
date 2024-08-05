@@ -1,373 +1,302 @@
 [
   {
-    "id": "icon-mall-bali",
+    "id": "villa-skandinavian",
     "image": {
-      "src": "/images/projects/iconmall/cover.png",
-      "alt": "Tom Visual"
+      "src": "/images/projects/villaskandinavian/cover.jpg",
+      "alt": "Villa Skandinavian"
     },
-    "link": "https://iconbalimall.com/",
-    "title": "Icon Mall Bali",
-    "location": "Sanur, Bali",
+    "link": "https://villaskandinavian.com/",
+    "title": "Villa Skandinavian",
+    "location": "Seminyak",
     "year": "2024",
-    "budget": "Rp. 250 Billion",
-    "description": "Icon Mall Bali is a shopping center located in Sanur, Bali. The mall is designed to be a one-stop shopping destination for the residents of Sanur and the surrounding areas. The mall will feature a wide range of retail stores, restaurants, and entertainment options, making it the perfect place to spend a day with family and friends.",
-    "gallery": [
-      {
-        "src": "/images/projects/iconmall/1.jpg",
-        "alt": "Icon Mall 1"
-      },
-      {
-        "src": "/images/projects/iconmall/2.jpeg",
-        "alt": "Icon Mall 2"
-      },
-      {
-        "src": "/images/projects/iconmall/3.jpeg",
-        "alt": "Icon Mall 3"
-      },
-      {
-        "src": "/images/projects/iconmall/4.jpg",
-        "alt": "Icon Mall 4"
-      }
-    ]
-  },
-  {
-    "id": "urban-park",
-    "image": {
-      "src": "/images/project/urbanpark.png",
-      "alt": "Urban Park"
-    },
-    "link": "https://urbanpark.com/",
-    "title": "Urban Park",
-    "location": "Jakarta, Indonesia",
-    "year": "2025",
     "budget": "Rp. 100 Billion",
-    "description": "Urban Park is a modern recreational park in the heart of Jakarta, designed to provide green space and leisure facilities for city residents. It includes walking paths, playgrounds, and picnic areas.",
+    "description": "Villa Skandinavian is an exquisite Scandinavian-style villa situated in the heart of Seminyak. Designed to embody the essence of modern elegance, this villa showcases a seamless integration of luxurious amenities and Scandinavian design principles. The villa features an open-plan layout that enhances the feeling of spaciousness and light. Floor-to-ceiling windows offer stunning panoramic views of the surrounding cityscape, allowing natural light to flood the interior. The use of high-quality materials and contemporary design elements ensures a sophisticated living environment. With its clean lines, minimalistic aesthetics, and functional spaces, Villa Skandinavian represents the pinnacle of modern luxury living in Bali.",
+    "size": "98m2",
     "gallery": [
       {
-        "src": "/images/projects/urbanpark/1.jpeg",
-        "alt": "Urban Park 1"
+        "src": "/images/projects/villaskandinavian/1.jpg",
+        "alt": "Villa Skandinavian 1"
       },
       {
-        "src": "/images/projects/urbanpark/2.jpeg",
-        "alt": "Urban Park 2"
+        "src": "/images/projects/villaskandinavian/2.jpg",
+        "alt": "Villa Skandinavian 2"
       },
       {
-        "src": "/images/projects/urbanpark/3.jpeg",
-        "alt": "Urban Park 3"
+        "src": "/images/projects/villaskandinavian/3.jpg",
+        "alt": "Villa Skandinavian 3"
       },
       {
-        "src": "/images/projects/urbanpark/4.jpeg",
-        "alt": "Urban Park 4"
+        "src": "/images/projects/villaskandinavian/4.jpg",
+        "alt": "Villa Skandinavian 4"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/5.jpg",
+        "alt": "Villa Skandinavian 5"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/6.jpg",
+        "alt": "Villa Skandinavian 6"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/7.jpg",
+        "alt": "Villa Skandinavian 7"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/8.jpg",
+        "alt": "Villa Skandinavian 8"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/9.jpg",
+        "alt": "Villa Skandinavian 9"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/10.jpg",
+        "alt": "Villa Skandinavian 10"
+      },
+      {
+        "src": "/images/projects/villaskandinavian/11.jpg",
+        "alt": "Villa Skandinavian 11"
       }
     ]
   },
   {
-    "id": "ocean-view-resort",
+    "id": "rumah-tinggal-2-lantai",
     "image": {
-      "src": "/images/project/oceanview.png",
-      "alt": "Ocean View Resort"
+      "src": "/images/projects/rumahtinggal/cover.jpg",
+      "alt": "Rumah Tinggal 2 Lantai"
     },
-    "link": "https://oceanviewresort.com/",
-    "title": "Ocean View Resort",
-    "location": "Bali, Indonesia",
-    "year": "2023",
-    "budget": "Rp. 300 Billion",
-    "description": "Ocean View Resort is a luxury resort located on the coast of Bali. It offers stunning ocean views, high-end amenities, and exclusive accommodations for a premium vacation experience.",
-    "gallery": [
-      {
-        "src": "/images/projects/oceanview/1.jpeg",
-        "alt": "Ocean View 1"
-      },
-      {
-        "src": "/images/projects/oceanview/2.jpeg",
-        "alt": "Ocean View 2"
-      },
-      {
-        "src": "/images/projects/oceanview/3.jpeg",
-        "alt": "Ocean View 3"
-      },
-      {
-        "src": "/images/projects/oceanview/4.jpeg",
-        "alt": "Ocean View 4"
-      }
-    ]
-  },
-  {
-    "id": "tech-hub",
-    "image": {
-      "src": "/images/project/techhub.png",
-      "alt": "Tech Hub"
-    },
-    "link": "https://techhub.com/",
-    "title": "Tech Hub",
-    "location": "Surabaya, Indonesia",
-    "year": "2024",
-    "budget": "Rp. 150 Billion",
-    "description": "Tech Hub is a state-of-the-art technology park in Surabaya. It is designed to foster innovation and collaboration among tech companies, featuring modern office spaces and conference facilities.",
-    "gallery": [
-      {
-        "src": "/images/projects/techhub/1.jpeg",
-        "alt": "Tech Hub 1"
-      },
-      {
-        "src": "/images/projects/techhub/2.jpeg",
-        "alt": "Tech Hub 2"
-      },
-      {
-        "src": "/images/projects/techhub/3.jpeg",
-        "alt": "Tech Hub 3"
-      },
-      {
-        "src": "/images/projects/techhub/4.jpeg",
-        "alt": "Tech Hub 4"
-      }
-    ]
-  },
-  {
-    "id": "cultural-center",
-    "image": {
-      "src": "/images/project/culturalcenter.png",
-      "alt": "Cultural Center"
-    },
-    "link": "https://culturalcenter.com/",
-    "title": "Cultural Center",
-    "location": "Yogyakarta, Indonesia",
-    "year": "2026",
-    "budget": "Rp. 80 Billion",
-    "description": "The Cultural Center in Yogyakarta aims to celebrate and preserve local heritage. It includes exhibition halls, performance spaces, and educational facilities to engage visitors with the region's culture.",
-    "gallery": [
-      {
-        "src": "/images/projects/culturalcenter/1.jpeg",
-        "alt": "Cultural Center 1"
-      },
-      {
-        "src": "/images/projects/culturalcenter/2.jpeg",
-        "alt": "Cultural Center 2"
-      },
-      {
-        "src": "/images/projects/culturalcenter/3.jpeg",
-        "alt": "Cultural Center 3"
-      },
-      {
-        "src": "/images/projects/culturalcenter/4.jpeg",
-        "alt": "Cultural Center 4"
-      }
-    ]
-  },
-  {
-    "id": "lakeside-villas",
-    "image": {
-      "src": "/images/project/lakeside.png",
-      "alt": "Lakeside Villas"
-    },
-    "link": "https://lakesidevillas.com/",
-    "title": "Lakeside Villas",
-    "location": "Bandung, Indonesia",
+    "link": "https://rumahtinggal.com/",
+    "title": "Rumah Tinggal 2 Lantai",
+    "location": "Dalung",
     "year": "2025",
+    "budget": "Rp. 150 Billion",
+    "description": "Rumah Tinggal 2 Lantai is a thoughtfully designed two-story residence located in the serene area of Dalung. This project emphasizes the principles of modern living with a focus on comfort and functionality. The design includes spacious interiors that are enhanced by an open-plan layout, allowing for a versatile use of space. High ceilings and large windows not only provide a sense of openness but also ensure an abundance of natural light. The house features modern finishes and quality materials, creating an inviting and contemporary atmosphere. With its strategic design and attention to detail, Rumah Tinggal 2 Lantai offers a perfect blend of style and practicality for a comfortable living experience.",
+    "size": "160m2",
+    "gallery": [
+      {
+        "src": "/images/projects/rumahtinggal/1.jpg",
+        "alt": "Rumah Tinggal 2 Lantai 1"
+      },
+      {
+        "src": "/images/projects/rumahtinggal/2.jpg",
+        "alt": "Rumah Tinggal 2 Lantai 2"
+      },
+      {
+        "src": "/images/projects/rumahtinggal/3.jpg",
+        "alt": "Rumah Tinggal 2 Lantai 3"
+      }
+    ]
+  },
+  {
+    "id": "villa-tropis",
+    "image": {
+      "src": "/images/projects/villatropis/cover.jpg",
+      "alt": "Villa Tropis"
+    },
+    "link": "https://villatropis.com/",
+    "title": "Villa Tropis",
+    "location": "Tibubeneng",
+    "year": "2024",
     "budget": "Rp. 200 Billion",
-    "description": "Lakeside Villas is a premium residential development situated by a serene lake in Bandung. It offers high-end villas with private lake access and lush landscaping.",
+    "description": "Villa Tropis offers an exquisite tropical living experience in the picturesque location of Tibubeneng. Designed to blend harmoniously with its lush surroundings, this villa combines modern luxury with tropical elegance. The villa features expansive living spaces with an emphasis on indoor-outdoor connectivity, achieved through large glass panels and sliding doors. The design integrates natural materials and finishes to enhance the tropical ambiance, while still providing all the comforts of modern living. With its spacious layout and luxurious features, Villa Tropis is designed to offer an unparalleled living experience amidst Bali's natural beauty.",
+    "size": "600m2",
     "gallery": [
       {
-        "src": "/images/projects/lakeside/1.jpeg",
-        "alt": "Lakeside Villas 1"
+        "src": "/images/projects/villatropis/1.jpg",
+        "alt": "Villa Tropis 1"
       },
       {
-        "src": "/images/projects/lakeside/2.jpeg",
-        "alt": "Lakeside Villas 2"
+        "src": "/images/projects/villatropis/2.jpg",
+        "alt": "Villa Tropis 2"
       },
       {
-        "src": "/images/projects/lakeside/3.jpeg",
-        "alt": "Lakeside Villas 3"
+        "src": "/images/projects/villatropis/3.jpg",
+        "alt": "Villa Tropis 3"
       },
       {
-        "src": "/images/projects/lakeside/4.jpeg",
-        "alt": "Lakeside Villas 4"
+        "src": "/images/projects/villatropis/4.jpg",
+        "alt": "Villa Tropis 4"
+      },
+      {
+        "src": "/images/projects/villatropis/5.jpg",
+        "alt": "Villa Tropis 5"
+      },
+      {
+        "src": "/images/projects/villatropis/6.jpg",
+        "alt": "Villa Tropis 6"
+      },
+      {
+        "src": "/images/projects/villatropis/7.jpg",
+        "alt": "Villa Tropis 7"
+      },
+      {
+        "src": "/images/projects/villatropis/8.jpg",
+        "alt": "Villa Tropis 8"
       }
     ]
   },
   {
-    "id": "gateway-towers",
+    "id": "villa-modern-tropis",
     "image": {
-      "src": "/images/project/gateway.png",
-      "alt": "Gateway Towers"
+      "src": "/images/projects/villamodern/cover.jpg",
+      "alt": "Villa Modern Tropis"
     },
-    "link": "https://gatewaytowers.com/",
-    "title": "Gateway Towers",
-    "location": "Medan, Indonesia",
-    "year": "2023",
-    "budget": "Rp. 400 Billion",
-    "description": "Gateway Towers is a high-rise commercial and residential project in Medan. It features modern skyscrapers with office spaces, apartments, and retail areas.",
+    "link": "https://villamodern.com/",
+    "title": "Villa Modern Tropis",
+    "location": "Canggu",
+    "year": "2025",
+    "budget": "Rp. 250 Billion",
+    "description": "Villa Modern Tropis merges modern design elements with tropical aesthetics, located in the vibrant area of Canggu. This villa features a blend of sleek, contemporary design with the natural charm of tropical living. The design emphasizes open spaces and high-quality finishes, creating a sophisticated and comfortable living environment. The villa's integration with the natural surroundings is achieved through the use of natural materials and expansive glass panels that connect the interior with the exterior. Villa Modern Tropis offers a luxurious and serene living experience, combining modern amenities with the beauty of tropical Bali.",
+    "size": "200m2",
     "gallery": [
       {
-        "src": "/images/projects/gateway/1.jpeg",
-        "alt": "Gateway Towers 1"
+        "src": "/images/projects/villamodern/1.jpg",
+        "alt": "Villa Modern Tropis 1"
       },
       {
-        "src": "/images/projects/gateway/2.jpeg",
-        "alt": "Gateway Towers 2"
+        "src": "/images/projects/villamodern/2.jpg",
+        "alt": "Villa Modern Tropis 2"
       },
       {
-        "src": "/images/projects/gateway/3.jpeg",
-        "alt": "Gateway Towers 3"
+        "src": "/images/projects/villamodern/3.jpg",
+        "alt": "Villa Modern Tropis 3"
       },
       {
-        "src": "/images/projects/gateway/4.jpeg",
-        "alt": "Gateway Towers 4"
+        "src": "/images/projects/villamodern/4.jpg",
+        "alt": "Villa Modern Tropis 4"
+      },
+      {
+        "src": "/images/projects/villamodern/5.jpg",
+        "alt": "Villa Modern Tropis 5"
+      },
+      {
+        "src": "/images/projects/villamodern/6.jpg",
+        "alt": "Villa Modern Tropis 6"
+      },
+      {
+        "src": "/images/projects/villamodern/7.jpg",
+        "alt": "Villa Modern Tropis 7"
       }
     ]
   },
   {
-    "id": "skyline-apartments",
+    "id": "spa-and-yoga",
     "image": {
-      "src": "/images/project/skyline.png",
-      "alt": "Skyline Apartments"
+      "src": "/images/projects/spaandyoga/cover.jpg",
+      "alt": "SPA and Yoga"
     },
-    "link": "https://skylineapartments.com/",
-    "title": "Skyline Apartments",
-    "location": "Jakarta, Indonesia",
+    "link": "https://spaandyoga.com/",
+    "title": "SPA and Yoga",
+    "location": "Ubud",
+    "year": "2026",
+    "budget": "Rp. 300 Billion",
+    "description": "SPA and Yoga is a premier wellness center located in the tranquil surroundings of Ubud. This comprehensive facility is designed to provide a holistic experience for relaxation and rejuvenation. The center offers a wide range of spa treatments and yoga classes in a serene and beautifully designed environment. The architecture and interior design focus on creating a peaceful and soothing atmosphere, with natural materials and calming colors that enhance the overall wellness experience. SPA and Yoga aims to be a sanctuary for guests seeking both physical and mental relaxation amidst the lush landscape of Ubud.",
+    "size": "1500m2",
+    "gallery": [
+      {
+        "src": "/images/projects/spaandyoga/1.jpg",
+        "alt": "SPA and Yoga 1"
+      },
+      {
+        "src": "/images/projects/spaandyoga/2.jpg",
+        "alt": "SPA and Yoga 2"
+      },
+      {
+        "src": "/images/projects/spaandyoga/3.jpg",
+        "alt": "SPA and Yoga 3"
+      },
+      {
+        "src": "/images/projects/spaandyoga/4.jpg",
+        "alt": "SPA and Yoga 4"
+      },
+      {
+        "src": "/images/projects/spaandyoga/5.jpg",
+        "alt": "SPA and Yoga 5"
+      }
+    ]
+  },
+
+  {
+    "id": "grill-13",
+    "image": {
+      "src": "/images/projects/grill13/cover.jpg",
+      "alt": "Grill 13"
+    },
+    "link": "https://grill13.com/",
+    "title": "Grill 13",
+    "location": "Dalung",
+    "year": "2024",
+    "budget": "Rp. 80 Billion",
+    "description": "Grill 13 is a stylish dining venue located in Dalung, known for its unique culinary offerings and modern design. The project focuses on creating a vibrant and inviting atmosphere that enhances the dining experience. The design incorporates contemporary aesthetics with comfortable seating arrangements, allowing guests to enjoy a relaxed yet sophisticated dining experience. Large windows and an open layout contribute to a welcoming ambiance, while high-quality materials and finishes ensure a stylish and functional space. Grill 13 is designed to be a standout destination for food enthusiasts seeking a blend of modern design and exceptional cuisine.",
+    "size": "500m2",
+    "gallery": [
+      {
+        "src": "/images/projects/grill13/1.jpg",
+        "alt": "Grill 13 1"
+      },
+      {
+        "src": "/images/projects/grill13/2.jpg",
+        "alt": "Grill 13 2"
+      },
+      {
+        "src": "/images/projects/grill13/3.jpg",
+        "alt": "Grill 13 3"
+      },
+      {
+        "src": "/images/projects/grill13/4.jpg",
+        "alt": "Grill 13 4"
+      },
+      {
+        "src": "/images/projects/grill13/5.jpg",
+        "alt": "Grill 13 5"
+      },
+      {
+        "src": "/images/projects/grill13/6.jpg",
+        "alt": "Grill 13 6"
+      }
+    ]
+  },
+  {
+    "id": "apartment-and-restaurant",
+    "image": {
+      "src": "/images/projects/apartmentandrestoran/cover.jpg",
+      "alt": "Apartment and Restaurant"
+    },
+    "link": "https://apartmentandrestoran.com/",
+    "title": "Apartment and Restaurant",
+    "location": "Seminyak",
     "year": "2024",
     "budget": "Rp. 180 Billion",
-    "description": "Skyline Apartments offers luxurious living spaces with panoramic city views in Jakarta. It includes modern amenities, fitness centers, and rooftop gardens.",
+    "description": "Apartment and Restaurant is a mixed-use development located in the bustling area of Seminyak. This project combines upscale apartment living with a high-quality dining experience. The apartments are designed with modern amenities and stylish interiors, providing residents with a luxurious living environment. The restaurant component is designed to offer an exceptional dining experience, with modern design elements and high-quality finishes creating an inviting atmosphere. The development focuses on providing a high-quality living experience complemented by an exceptional dining atmosphere.",
+    "size": "1200m2",
     "gallery": [
       {
-        "src": "/images/projects/skyline/1.jpeg",
-        "alt": "Skyline Apartments 1"
+        "src": "/images/projects/apartmentandrestoran/1.jpg",
+        "alt": "Apartment and Restaurant 1"
       },
       {
-        "src": "/images/projects/skyline/2.jpeg",
-        "alt": "Skyline Apartments 2"
+        "src": "/images/projects/apartmentandrestoran/2.jpg",
+        "alt": "Apartment and Restaurant 2"
       },
       {
-        "src": "/images/projects/skyline/3.jpeg",
-        "alt": "Skyline Apartments 3"
+        "src": "/images/projects/apartmentandrestoran/3.jpg",
+        "alt": "Apartment and Restaurant 3"
       },
       {
-        "src": "/images/projects/skyline/4.jpeg",
-        "alt": "Skyline Apartments 4"
-      }
-    ]
-  },
-  {
-    "id": "seaside-resort",
-    "image": {
-      "src": "/images/project/seaside.png",
-      "alt": "Seaside Resort"
-    },
-    "link": "https://seasideresort.com/",
-    "title": "Seaside Resort",
-    "location": "Lombok, Indonesia",
-    "year": "2026",
-    "budget": "Rp. 220 Billion",
-    "description": "Seaside Resort is a premium resort located on the beautiful coast of Lombok. It offers luxury accommodations, a private beach, and exclusive dining options.",
-    "gallery": [
-      {
-        "src": "/images/projects/seaside/1.jpeg",
-        "alt": "Seaside Resort 1"
+        "src": "/images/projects/apartmentandrestoran/4.jpg",
+        "alt": "Apartment and Restaurant 4"
       },
       {
-        "src": "/images/projects/seaside/2.jpeg",
-        "alt": "Seaside Resort 2"
+        "src": "/images/projects/apartmentandrestoran/5.jpg",
+        "alt": "Apartment and Restaurant 5"
       },
       {
-        "src": "/images/projects/seaside/3.jpeg",
-        "alt": "Seaside Resort 3"
+        "src": "/images/projects/apartmentandrestoran/6.jpg",
+        "alt": "Apartment and Restaurant 6"
       },
       {
-        "src": "/images/projects/seaside/4.jpeg",
-        "alt": "Seaside Resort 4"
-      }
-    ]
-  },
-  {
-    "id": "riverwalk-complex",
-    "image": {
-      "src": "/images/project/riverwalk.png",
-      "alt": "Riverwalk Complex"
-    },
-    "link": "https://riverwalkcomplex.com/",
-    "title": "Riverwalk Complex",
-    "location": "Bali, Indonesia",
-    "year": "2025",
-    "budget": "Rp. 120 Billion",
-    "description": "Riverwalk Complex is a mixed-use development located along the river in Bali. It features residential units, commercial spaces, and recreational areas.",
-    "gallery": [
-      {
-        "src": "/images/projects/riverwalk/1.jpeg",
-        "alt": "Riverwalk Complex 1"
-      },
-      {
-        "src": "/images/projects/riverwalk/2.jpeg",
-        "alt": "Riverwalk Complex 2"
-      },
-      {
-        "src": "/images/projects/riverwalk/3.jpeg",
-        "alt": "Riverwalk Complex 3"
-      },
-      {
-        "src": "/images/projects/riverwalk/4.jpeg",
-        "alt": "Riverwalk Complex 4"
-      }
-    ]
-  },
-  {
-    "id": "mountain-view-villas",
-    "image": {
-      "src": "/images/project/mountainview.png",
-      "alt": "Mountain View Villas"
-    },
-    "link": "https://mountainviewvillas.com/",
-    "title": "Mountain View Villas",
-    "location": "Bandung, Indonesia",
-    "year": "2024",
-    "budget": "Rp. 175 Billion",
-    "description": "Mountain View Villas offers serene and luxurious living with spectacular views of the mountains. The project includes spacious villas and landscaped gardens.",
-    "gallery": [
-      {
-        "src": "/images/projects/mountainview/1.jpeg",
-        "alt": "Mountain View Villas 1"
-      },
-      {
-        "src": "/images/projects/mountainview/2.jpeg",
-        "alt": "Mountain View Villas 2"
-      },
-      {
-        "src": "/images/projects/mountainview/3.jpeg",
-        "alt": "Mountain View Villas 3"
-      },
-      {
-        "src": "/images/projects/mountainview/4.jpeg",
-        "alt": "Mountain View Villas 4"
-      }
-    ]
-  },
-  {
-    "id": "cityscape-plaza",
-    "image": {
-      "src": "/images/project/cityscape.png",
-      "alt": "Cityscape Plaza"
-    },
-    "link": "https://cityscapeplaza.com/",
-    "title": "Cityscape Plaza",
-    "location": "Medan, Indonesia",
-    "year": "2023",
-    "budget": "Rp. 280 Billion",
-    "description": "Cityscape Plaza is a large-scale commercial development in Medan. It features office towers, shopping areas, and entertainment facilities, designed to be a hub of urban activity.",
-    "gallery": [
-      {
-        "src": "/images/projects/cityscape/1.jpeg",
-        "alt": "Cityscape Plaza 1"
-      },
-      {
-        "src": "/images/projects/cityscape/2.jpeg",
-        "alt": "Cityscape Plaza 2"
-      },
-      {
-        "src": "/images/projects/cityscape/3.jpeg",
-        "alt": "Cityscape Plaza 3"
-      },
-      {
-        "src": "/images/projects/cityscape/4.jpeg",
-        "alt": "Cityscape Plaza 4"
+        "src": "/images/projects/apartmentandrestoran/7.jpg",
+        "alt": "Apartment and Restaurant 7"
       }
     ]
   }

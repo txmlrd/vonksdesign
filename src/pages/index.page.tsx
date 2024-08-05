@@ -464,7 +464,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                       className='rounded-xl'
                     />
                     <div className='bg-black group rounded-xl bg-opacity-20 opacity-0 hover:opacity-100 absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500'>
-                      <h1 className='group-hover:-translate-y-0 translate-y-10 transition-transform duration-500 font-helvetica font-bold text-3xl uppercase'>
+                      <h1 className='group-hover:-translate-y-0 translate-y-10 transition-transform duration-500 font-helvetica font-bold text-3xl uppercase  text-center'>
                         {project.title}
                       </h1>
                       <a href={`/projects/${project.id}`}>

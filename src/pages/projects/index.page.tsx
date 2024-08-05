@@ -142,7 +142,7 @@ function Projects({ projects }: ProjectsProps) {
                           {project.title}
                         </h1>
                         <h2 className='md:text-2xl '>{project.location}</h2>
-                        <p className='text-sm md:text-lg'>
+                        <p className='text-sm md:text-lg line-clamp-2 xl:line-clamp-4'>
                           {project.description}
                         </p>
                         <a
@@ -185,12 +185,12 @@ function Projects({ projects }: ProjectsProps) {
 
                   <div className='p-5 h-1/3'>
                     <h2>{project.location}</h2>
-                    <h1 className='text-3xl text-warna-abu font-helvetica font-bold'>
+                    <h1 className='xl:text-3xl text-2xl text-warna-abu font-helvetica font-bold'>
                       {project.title}
                     </h1>
                     <a
                       href={`/projects/${project.id}`}
-                      className='items-center group cursor-pointer flex flex-row w-fit font-bold text-warna-abu font-helveticalight mt-5'
+                      className='items-center group cursor-pointer flex flex-row w-fit scale-90 xl:scale-100 font-bold text-warna-abu font-helveticalight mt-5'
                     >
                       <h1>Details</h1>
                       <ArrowRight

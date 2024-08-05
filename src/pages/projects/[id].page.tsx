@@ -23,6 +23,7 @@ interface Project {
   year: string;
   budget: string;
   description: string;
+  size: string;
   gallery: {
     src: string;
     alt: string;
@@ -75,20 +76,25 @@ const ProjectPage = ({ project }: ProjectPageProps) => {
                   alt={project.image.alt}
                   className='w-full h-[500px] object-cover rounded-xl  xl:hidden'
                 />
-                <h2 className='font font-helvetica font-normal text-xl border-b-2 pt-2 pb-4'>
+                <h2 className='font font-helvetica font-normal text-xl border-b-2 pt-5 pb-4'>
                   Location :{' '}
-                  <span className='font-helveticalight'>
-                    {project.location}
-                  </span>
+                  <span className='font-helvetica'>{project.location}</span>
                 </h2>
                 <h3 className='font font-helvetica font-normal text-xl border-b-2 py-4'>
+                  Building area :{' '}
+                  <span className='font-helvetica'>
+                    {project.size.replace(/m2$/, 'm²')}
+                  </span>
+                </h3>
+
+                {/* <h3 className='font font-helvetica font-normal text-xl border-b-2 py-4'>
                   Year :{' '}
                   <span className='font-helveticalight'>{project.year}</span>
                 </h3>
                 <h4 className='font font-helvetica font-normal text-xl border-b-2 py-4'>
                   Budget :{' '}
                   <span className='font-helveticalight'>{project.budget}</span>
-                </h4>
+                </h4> */}
               </div>
             </div>
             <div className=' my-10 border-b-2 pb-10'>
