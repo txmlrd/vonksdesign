@@ -1,4 +1,5 @@
-import React from 'react';
+import { motion, useInView } from 'framer-motion';
+import React, { useRef } from 'react';
 import { useState } from 'react';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaArrowDown, FaWhatsapp } from 'react-icons/fa';
@@ -24,76 +25,100 @@ function Contact() {
     {
       question: 'How do I get started?',
       answer:
-        'Getting started is easy! Simply fill out our contact form or give us a call. Our team will reach out to you to discuss your project and provide you with a free quote.',
+        'Getting started is simple! Fill out our contact form or give us a call. Our team will schedule an initial consultation to understand your project needs and provide a free estimate.',
     },
     {
-      question: 'What services do you offer?',
+      question: 'What services does we offer?',
       answer:
-        'We offer a range of services including web development, mobile app development, and consulting. Reach out to us for more details.',
+        'We offer a comprehensive range of services, including architectural design, interior design, budget planning (RAB), construction management, and consultation. We also specialize in sustainable design practices.',
     },
     {
       question: 'What is your pricing structure?',
       answer:
-        'Our pricing varies based on the project requirements. We offer custom quotes based on your specific needs.',
+        'Our pricing depends on the project scope, design requirements, and materials used. We create tailored plans that suit your budget while maintaining high-quality standards.',
     },
     {
       question: 'How long does it take to complete a project?',
       answer:
-        'The timeline for each project varies based on the scope of work. We will provide you with an estimated timeline during our initial consultation.',
+        'The timeline varies depending on the complexity and scale of the project. After our initial consultation, we will provide you with a detailed project schedule and estimated completion date.',
     },
     {
-      question: 'Do you offer maintenance services?',
+      question: 'Do you offer post-construction services?',
       answer:
-        'Yes, we offer ongoing maintenance services to ensure your website or app remains up-to-date and secure.',
+        'Yes, we offer post-construction services including maintenance, renovations, and regular inspections to ensure the long-term quality and durability of your property.',
     },
     {
       question: 'What payment methods do you accept?',
       answer:
-        'We accept a variety of payment methods including credit cards, bank transfers, and PayPal. Contact us for more details.',
+        'We accept several payment methods, including bank transfers and credit card payments. Specific details can be discussed during our consultation to find a method that works best for you.',
+    },
+    {
+      question: 'Can you work with specific design styles or themes?',
+      answer:
+        'Absolutely! We specialize in various design styles, from modern and minimalist to traditional and tropical. We work closely with clients to create a design that reflects their personal preferences and vision.',
     },
   ];
+
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  const slideUpWithBlur = {
+    hidden: { y: 50, opacity: 0, filter: 'blur(5px)' },
+    visible: { y: 0, opacity: 1, filter: 'blur(0px)' },
+  };
+
+  const ref = useRef(null);
+
+  const tagLine = useInView(ref, { once: true });
   return (
     <Layout>
-      <Seo templateTitle='About' />
+      <Seo templateTitle='Contact' />
       <main>
         <Navbar />
 
-        <section className='bg-warna-abu'>
+        <section ref={ref} className='bg-warna-abu'>
           <div
-            className='pt-[123px] bg-fixed bg-cover bg-center font-helvetica flex min-h-screen flex-col justify-center items-center text-white'
+            className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white relative'
             style={{
-              backgroundImage: "url('/images/pagecover/landingpage.png')",
+              backgroundImage: "url('/images/pagecover/cover.jpg')",
             }}
           >
-            <p className='text-center md:text-2xl font-thin font-futura tracking-[0.90em]'>
-              VONK's DESIGN
-            </p>
-            <div className='flex flex-col justify-center items-center'>
-              <h1 className='text-center mt-4 font-black text-6xl md:text-8xl font-helvetica'>
-                Contact
-              </h1>
-              <p className='tracking-[0.90em] font-helveticalight text-center md:text-xl pt-10'>
-                Home / Contact
-              </p>
-            </div>
-
-            <Button
-              onClick={scrollToContact}
-              className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
+            <div className='absolute inset-0 bg-black opacity-50 z-0'></div>
+            <motion.div
+              initial='hidden'
+              animate={tagLine ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              className='flex flex-col justify-center items-center z-10'
             >
-              <FaArrowDown />
-            </Button>
+              <p className='text-center md:text-2xl font-thin font-futura tracking-[0.90em]'>
+                VONK's DESIGN
+              </p>
+              <div className='flex flex-col justify-center items-center'>
+                <h1 className='text-center mt-4 font-black text-6xl md:text-8xl font-helvetica'>
+                  Contact
+                </h1>
+                <p className='tracking-[0.90em] font-helveticalight text-center md:text-xl pt-10'>
+                  Home / Contact
+                </p>
+              </div>
+
+              <Button
+                onClick={scrollToContact}
+                className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
+              >
+                <FaArrowDown />
+              </Button>
+            </motion.div>
           </div>
         </section>
 
         <section id='contact' className='bg-warna-abu'>
-          <div className='  flex flex-col max-w-[2000px] mx-auto  xl:p-20 p-10  text-white items-center justify-center  '>
+          <div className='  flex flex-col max-w-[1700px] mx-auto  xl:p-20 p-10  text-white items-center justify-center  '>
             <div className=' w-full flex flex-col items-start pb-10'>
               <h1 className='text-center font-helvetica xL:text-7xl text-5xl font-bold border-warna-gold '>
                 Get in touch
@@ -194,7 +219,7 @@ function Contact() {
                       }`}
                     >
                       <div className='flex flex-row items-center justify-between'>
-                        <h1 className='text-xl'>{faq.question}</h1>
+                        <h1 className='text-xl font-bold'>{faq.question}</h1>
                         <div
                           className='p-1 rounded-full border border-white cursor-pointer'
                           onClick={() => toggleIndex(index)}
@@ -215,7 +240,7 @@ function Contact() {
                       <p
                         className={
                           activeIndex === index
-                            ? 'faq-answer-visible transition-all duration-500 ease-in-out mr-10'
+                            ? 'faq-answer-visible transition-all duration-500 ease-in-out mr-10  '
                             : 'faq-answer-hidden -translate-y-3 blur-sm transition-all duration-500 ease-in-out mr-10'
                         }
                       >

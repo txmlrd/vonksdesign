@@ -3,6 +3,7 @@ import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { SiGooglemaps } from 'react-icons/si';
 function Footer() {
   const year = new Date().getFullYear();
   return (
@@ -62,8 +63,15 @@ function Footer() {
           {' '}
           <FaWhatsapp size={30} />
         </a>
+        <a
+          href='https://maps.app.goo.gl/uSFofmWE7GzRBTUYA'
+          className='hover:scale-150 hover:animate-pulse hover:rotate-6 transition-all '
+        >
+          {' '}
+          <SiGooglemaps size={30} />
+        </a>
       </div>
-      <p className='text-white font-helvetical mt-5'>
+      <p className='text-white font-helvetical text-center mt-5'>
         Jl. Tangkuban perahu III No.9 kav 11/12, Padangsambian, Kec. Denpasar
         Bar., Kota Denpasar, Bali 80117
       </p>

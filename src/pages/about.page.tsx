@@ -1,4 +1,4 @@
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { useRef } from 'react';
@@ -33,9 +33,16 @@ function About() {
     }
   };
 
+  const slideUpWithBlur = {
+    hidden: { y: 50, opacity: 0, filter: 'blur(5px)' },
+    visible: { y: 0, opacity: 1, filter: 'blur(0px)' },
+  };
+
   const ref = useRef(null);
   const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
+  const tagLine = useInView(ref3, { once: true });
   const isInView = useInView(ref, { once: true });
   const isExperience = useInView(ref2, { once: true });
 
@@ -44,31 +51,40 @@ function About() {
       <Seo templateTitle='About' />
       <main>
         <Navbar />
-        <section className='bg-warna-abu'>
+        <section ref={ref3} className='bg-warna-abu'>
           <div
-            className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
+            className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white relative'
             style={{
-              backgroundImage: "url('/images/pagecover/landingpage.png')",
+              backgroundImage: "url('/images/pagecover/cover.jpg')",
             }}
           >
-            <p className='text-center xl:text-2xl font-thin font-futura tracking-[0.90em]'>
-              VONK's DESIGN
-            </p>
-            <div className='flex flex-col justify-center items-center'>
-              <h1 className='text-center mt-4 font-black text-6xl xl:text-8xl font-helvetica'>
-                About Us
-              </h1>
-              <p className='tracking-[0.90em] font-helveticalight text-center xl:text-xl pt-10'>
-                Home / About Us
-              </p>
-            </div>
-
-            <Button
-              onClick={scrollToVisiMisi}
-              className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
+            <div className='absolute inset-0 bg-black opacity-50 z-0'></div>
+            <motion.div
+              initial='hidden'
+              animate={tagLine ? 'visible' : 'hidden'}
+              variants={slideUpWithBlur}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+              className='flex flex-col justify-center items-center z-10'
             >
-              <FaArrowDown />
-            </Button>
+              <p className='text-center xl:text-2xl font-thin font-futura tracking-[0.90em]'>
+                VONK's DESIGN
+              </p>
+              <div className='flex flex-col justify-center items-center'>
+                <h1 className='text-center mt-4 font-black text-6xl xl:text-8xl font-helvetica'>
+                  About Us
+                </h1>
+                <p className='tracking-[0.90em] font-helveticalight text-center xl:text-xl pt-10'>
+                  Home / About Us
+                </p>
+              </div>
+
+              <Button
+                onClick={scrollToVisiMisi}
+                className='rounded-full bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white mt-10 motion-safe:animate-bounce'
+              >
+                <FaArrowDown />
+              </Button>
+            </motion.div>
           </div>
         </section>
 

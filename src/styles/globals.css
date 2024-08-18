@@ -72,6 +72,25 @@
 }
 /* Add this to your global CSS file or a relevant CSS module */
 
+/* Custom text gradient and glow */
+.text-gradient {
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff7300
+  ); /* Gradient from red to orange */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Red glow effect */
+}
+
+.text-gradient-glow {
+  @apply text-gradient text-glow;
+}
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;

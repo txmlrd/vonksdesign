@@ -13,13 +13,15 @@ const fadeInUp = {
 function Startproject() {
   return (
     <div
-      className='bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
+      className='bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white relative'
       style={{
-        backgroundImage: "url('/images/pagecover/landingpage.png')",
+        backgroundImage: "url('/images/pagecover/footer/1.jpg')",
       }}
     >
+      <div className='absolute inset-0 bg-black opacity-50 z-0'></div>{' '}
+      {/* Black overlay */}
       <motion.div
-        className='flex flex-col justify-center items-center'
+        className='flex flex-col justify-center items-center z-10'
         variants={fadeInUp}
         initial='hidden'
         animate='visible'

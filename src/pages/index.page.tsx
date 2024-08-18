@@ -9,10 +9,9 @@ import { useState } from 'react';
 import * as React from 'react';
 import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
-import { BiSolidQuoteLeft } from 'react-icons/bi';
 import { IoConstructOutline } from 'react-icons/io5';
 import { TfiWrite } from 'react-icons/tfi';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
@@ -144,12 +143,13 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
 
         {/* START LANDING PAGE */}
         <section ref={ref} className='bg-warna-abu'>
-          <div
-            className='pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'
-            style={{
-              backgroundImage: "url('/images/pagecover/landingpage.png')",
-            }}
-          >
+          <Image
+            src='/images/pagecover/cover.jpg'
+            layout='fill'
+            objectFit='cover'
+            className='bg-fixed bg-cover bg-center absolute'
+          />
+          <div className=' relative bg-black bg-opacity-50 pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'>
             <motion.p
               initial='hidden'
               animate={tagLine ? 'visible' : 'hidden'}
@@ -259,23 +259,24 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
           </div>
 
           {isPopupOpen && (
-            <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
-              <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
+            <div className='fixed inset-0 bg-black bg-opacity-60 backdrop-blur-lg flex items-center justify-center z-50'>
+              <div className='bg-gradient-to-b from-white to-gray-50 shadow-2xl p-10 rounded-3xl relative max-w-lg w-full'>
                 <AiOutlineClose
-                  size={24}
-                  className='absolute top-4 right-4 cursor-pointer'
+                  size={28}
+                  className='absolute top-4 right-4 text-gray-600 cursor-pointer hover:text-black transition duration-300'
                   onClick={handlePopupClose}
                 />
-                <h2 className='text-2xl font-bold mb-4'>
-                  Hitung Biaya Jasa Design
+                <h2 className='text-3xl font-extrabold mb-6 text-gray-800'>
+                  Calculate Your Design Service Cost
                 </h2>
-                <p className='mb-4'>
-                  Hitung biaya design anda gratis yuk mulai dengan menghubungi
-                  WhatsApp ini.
+                <p className='text-lg mb-6 text-gray-600'>
+                  Calculate your design cost
+                  <span className='font-bold'> for free</span>! Get started by
+                  contacting us on WhatsApp.
                 </p>
                 <a
                   href='https://wa.me/1234567890' // Replace with your WhatsApp number
-                  className='text-blue-500 underline'
+                  className='bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-600 transition duration-300'
                 >
                   Chat with us on WhatsApp
                 </a>
@@ -284,23 +285,24 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
           )}
 
           {isPopupConstructionOpen && (
-            <div className='fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50'>
-              <div className='bg-white text-warna-abu p-8 rounded-lg relative'>
+            <div className='fixed inset-0 bg-black bg-opacity-60 backdrop-blur-lg flex items-center justify-center z-50'>
+              <div className='bg-gradient-to-b from-white to-gray-50 shadow-2xl p-10 rounded-3xl relative max-w-lg w-full'>
                 <AiOutlineClose
-                  size={24}
-                  className='absolute top-4 right-4 cursor-pointer'
+                  size={28}
+                  className='absolute top-4 right-4 text-gray-600 cursor-pointer hover:text-black transition duration-300'
                   onClick={handlePopupConstructionClose}
                 />
-                <h2 className='text-2xl font-bold mb-4'>
-                  Hitung Biaya Jasa Arsitek
+                <h2 className='text-3xl font-extrabold mb-6 text-gray-800'>
+                  Calculate Your Architect Service Cost
                 </h2>
-                <p className='mb-4'>
-                  Hitung biaya design anda gratis yuk mulai dengan menghubungi
-                  WhatsApp ini.
+                <p className='text-lg mb-6 text-gray-600'>
+                  Calculate your design cost
+                  <span className='font-bold'> for free</span>! Get started by
+                  contacting us on WhatsApp.
                 </p>
                 <a
                   href='https://wa.me/1234567890' // Replace with your WhatsApp number
-                  className='text-blue-500 underline'
+                  className='bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-600 transition duration-300'
                 >
                   Chat with us on WhatsApp
                 </a>
@@ -328,56 +330,55 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
             </h1>
             <div className='w-1/4 border-warna-gold rounded-xl border-2'></div>
           </div>
-          <div className=' xl:w-1/2 w-full xl:mr-28 flex justify-center items-center  hover:cursor-grab'>
-            <Swiper
-              spaceBetween={10}
-              slidesPerView={1}
-              // onSlideChange={() => console.log('slide change')}
-              // onSwiper={(swiper) => console.log(swiper)}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
-              className='mySwiper'
-            >
-              <SwiperSlide>
-                <Image
-                  src='/images/pagecover/landingpage.png'
-                  alt='Landing Page'
-                  width={700}
-                  height={500}
-                  className='rounded-xl'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src='/images/pagecover/landingpage.png'
-                  alt='Landing Page'
-                  width={700}
-                  height={500}
-                  className='rounded-xl'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src='/images/pagecover/landingpage.png'
-                  alt='Landing Page'
-                  width={700}
-                  height={500}
-                  className='rounded-xl'
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src='/images/pagecover/landingpage.png'
-                  alt='Landing Page'
-                  width={700}
-                  height={500}
-                  className='rounded-xl'
-                />
-              </SwiperSlide>
-            </Swiper>
+          <div className='xl:w-1/2 w-full xl:mr-28 flex justify-center items-center'>
+            <div className='w-full h-[500px] overflow-hidden relative'>
+              <Swiper
+                spaceBetween={10}
+                slidesPerView={1}
+                pagination={{ clickable: true }}
+                modules={[Pagination]}
+                className='w-full h-full'
+              >
+                <SwiperSlide className='flex items-center justify-center'>
+                  <Image
+                    src='/images/pagecover/ourmission/1.jpg'
+                    alt='Landing Page'
+                    layout='fill'
+                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
+                    className='rounded-xl'
+                  />
+                </SwiperSlide>
+                <SwiperSlide className='flex items-center justify-center'>
+                  <Image
+                    src='/images/pagecover/ourmission/2.jpg'
+                    alt='Landing Page'
+                    layout='fill'
+                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
+                    className='rounded-xl'
+                  />
+                </SwiperSlide>
+                <SwiperSlide className='flex items-center justify-center'>
+                  <Image
+                    src='/images/pagecover/ourmission/3.jpg'
+                    alt='Landing Page'
+                    layout='fill'
+                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
+                    className='rounded-xl'
+                  />
+                </SwiperSlide>
+                <SwiperSlide className='flex items-center justify-center'>
+                  <Image
+                    src='/images/pagecover/ourmission/4.jpg'
+                    alt='Landing Page'
+                    layout='fill'
+                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
+                    className='rounded-xl'
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
+
           <div className=' flex flex-col w-full xl:w-1/2 items-start space-y-10'>
             <div className='hidden xl:flex flex-col space-y-1 w-3/4'>
               <h1 className='text-4xl font-helvetica font-bold'>
@@ -486,14 +487,17 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
         {/* END LATEST PROJECT */}
 
         {/* START TESTIMONIAL */}
-        <section className=' bg-white'>
-          <div className='mx-auto max-w-[1800px] flex flex-col bg-white p-10 md:p-20 text-warna-abu'>
-            <div className=' flex flex-col justify-center items-center'>
-              <h1 className='text-center font-helvetica md:text-6xl text-5xl font-bold pb-1 '>
-                Their Experience, Our Inspiration
+        {/* <section className='relative bg-cover bg-center'>
+          <div className='absolute inset-0  opacity-30 z-[-1]'></div>
+          <div className='mx-auto max-w-[1800px] flex flex-col p-10 md:p-20 text-warna-abu relative'>
+            <div className='flex flex-col justify-center items-center'>
+              <h1 className='text-center font-helvetica md:text-6xl text-5xl font-bold pb-1 text-white'>
+                Their <span className='text-gradient-glow'>Experience</span>,
+                Our <span className='text-gradient-glow'>Inspiration</span>
               </h1>
-              <p className='font-helvetica text-xl pt-5 text-center md:w-1/2'>
-                At <span className=' font-bold'>Vonk's Design</span>, we are
+
+              <p className='font-helvetica text-xl pt-5 text-center md:w-1/2 text-white'>
+                At <span className='font-bold'>Vonk's Design</span>, we are
                 committed to delivering the best services in every project we
                 undertake. Here are some testimonials from our customers who are
                 satisfied with our work.
@@ -522,7 +526,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                 >
                   {reviews.map((review, index) => (
                     <SwiperSlide key={index}>
-                      <div className='mb-10 mx-10 flex flex-col p-6 bg-gray-100 rounded-lg shadow-lg'>
+                      <div className='mb-10 mx-10 flex flex-col p-6 bg-gray-100 rounded-lg shadow-lg '>
                         <div className='flex items-start mb-4'>
                           <BiSolidQuoteLeft
                             size={50}
@@ -545,7 +549,8 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
               )}
             </div>
           </div>
-        </section>
+        </section> */}
+
         {/* END TESTIMONIAL */}
 
         <Startproject />
