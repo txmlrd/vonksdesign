@@ -148,6 +148,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
             layout='fill'
             objectFit='cover'
             className='bg-fixed bg-cover bg-center absolute'
+            alt={''}
           />
           <div className=' relative bg-black bg-opacity-50 pt-[123px] bg-fixed bg-cover bg-center flex min-h-screen flex-col justify-center items-center text-white'>
             <motion.p
