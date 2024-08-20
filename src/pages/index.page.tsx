@@ -11,7 +11,7 @@ import { useRef } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { IoConstructOutline } from 'react-icons/io5';
 import { TfiWrite } from 'react-icons/tfi';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
@@ -337,45 +337,25 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                 spaceBetween={10}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                modules={[Pagination]}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                loop={true}
+                modules={[Pagination, Autoplay]}
                 className='w-full h-full'
               >
-                <SwiperSlide className='flex items-center justify-center'>
-                  <Image
-                    src='/images/pagecover/ourmission/1.jpg'
-                    alt='Landing Page'
-                    layout='fill'
-                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide className='flex items-center justify-center'>
-                  <Image
-                    src='/images/pagecover/ourmission/2.jpg'
-                    alt='Landing Page'
-                    layout='fill'
-                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide className='flex items-center justify-center'>
-                  <Image
-                    src='/images/pagecover/ourmission/3.jpg'
-                    alt='Landing Page'
-                    layout='fill'
-                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
-                <SwiperSlide className='flex items-center justify-center'>
-                  <Image
-                    src='/images/pagecover/ourmission/4.jpg'
-                    alt='Landing Page'
-                    layout='fill'
-                    objectFit='cover' // This will ensure the image covers the container and is cropped if needed
-                    className='rounded-xl'
-                  />
-                </SwiperSlide>
+                {[...Array(16)].map((_, i) => (
+                  <SwiperSlide
+                    key={i}
+                    className='flex items-center justify-center'
+                  >
+                    <Image
+                      src={`/images/pagecover/ourmission/${i + 1}.jpg`}
+                      alt={`Landing Page ${i + 1}`}
+                      layout='fill'
+                      objectFit='cover'
+                      className='rounded-xl'
+                    />
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
@@ -395,9 +375,11 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                 </h1>
                 <p>
                   Leveraging decades of expertise to deliver exceptional
-                  results, since 1994. Our extensive experience ensures that
-                  every project is completed to the highest standards of quality
-                  and professionalism.
+                  results,{' '}
+                  <span className='font-bold text-red-500'>since 1994</span>.
+                  Our extensive experience ensures that every project is
+                  completed to the highest standards of quality and
+                  professionalism.
                 </p>
               </div>
               <div className=''>
@@ -417,9 +399,10 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                 </h1>
                 <p>
                   We have built a strong reputation based on trust and client
-                  satisfaction. Over 100 clients have chosen Vonk Design for
-                  their projects, and many continue to work with us for their
-                  ongoing needs.
+                  satisfaction. Over
+                  <span className='font-bold text-red-500'> 78 clients </span>
+                  have chosen Vonk Design for their projects, and many continue
+                  to work with us for their ongoing needs.
                 </p>
               </div>
               <div className=''>
@@ -427,10 +410,13 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                   9+ Expert Teams
                 </h1>
                 <p>
-                  Our firm comprises over 10 specialized teams, each focusing on
-                  different aspects of design and construction. This allows us
-                  to provide comprehensive services that cover every detail of a
-                  project.
+                  Our firm comprises over{' '}
+                  <span className='font-bold text-red-500 '>
+                    9 specialized teams
+                  </span>
+                  , each focusing on different aspects of design and
+                  construction. This allows us to provide comprehensive services
+                  that cover every detail of a project.
                 </p>
               </div>
             </div>

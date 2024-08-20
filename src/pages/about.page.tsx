@@ -406,7 +406,7 @@ function About() {
                   </div>
                   <p className='text-base xl:text-lg mt-5 text-justify'>
                     We have built a strong reputation based on trust and client
-                    satisfaction. Over 100 clients have chosen Vonk Design for
+                    satisfaction. Over 78 clients have chosen Vonk Design for
                     their projects, and many continue to work with us for their
                     ongoing needs.
                   </p>
@@ -426,7 +426,7 @@ function About() {
                     </h2>
                   </div>
                   <p className='text-base xl:text-lg mt-5 text-justify'>
-                    Our firm comprises over 10 specialized teams, each focusing
+                    Our firm comprises over 9 specialized teams, each focusing
                     on different aspects of design and construction. This allows
                     us to provide comprehensive services that cover every detail
                     of a project.
