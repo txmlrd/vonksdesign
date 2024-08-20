@@ -147,7 +147,7 @@ function About() {
                 </div>
                 <div className='w-full xl:hidden flex justify-center items-center mb-5'>
                   <Image
-                    src='/images/pagecover/landingpage.png'
+                    src='/images/pagecover/about/1.jpg'
                     alt='Landing Page'
                     width={500}
                     height={250}
@@ -177,7 +177,7 @@ function About() {
               </div>
               <div className='hidden xl:flex w-1/2 justify-center items-center'>
                 <Image
-                  src='/images/pagecover/landingpage.png'
+                  src='/images/pagecover/about/1.jpg'
                   alt='Landing Page'
                   width={1000}
                   height={500}
@@ -202,7 +202,7 @@ function About() {
                 </div>
                 <div className='w-full xl:hidden flex justify-center items-center mb-5'>
                   <Image
-                    src='/images/pagecover/landingpage.png'
+                    src='/images/pagecover/about/2.jpg'
                     alt='Landing Page'
                     width={500}
                     height={250}
@@ -231,7 +231,7 @@ function About() {
               </div>
               <div className='hidden xl:flex w-1/2 justify-center items-center'>
                 <Image
-                  src='/images/pagecover/landingpage.png'
+                  src='/images/pagecover/about/2.jpg'
                   alt='Landing Page'
                   width={1000}
                   height={500}
@@ -256,7 +256,7 @@ function About() {
                 </div>
                 <div className='w-full xl:hidden flex justify-center items-center mb-5'>
                   <Image
-                    src='/images/pagecover/landingpage.png'
+                    src='/images/pagecover/about/4.jpg'
                     alt='Landing Page'
                     width={500}
                     height={250}
@@ -285,7 +285,7 @@ function About() {
               </div>
               <div className='hidden xl:flex w-1/2 justify-center items-center'>
                 <Image
-                  src='/images/pagecover/landingpage.png'
+                  src='/images/pagecover/about/4.jpg'
                   alt='Landing Page'
                   width={1000}
                   height={500}
@@ -312,7 +312,7 @@ function About() {
               >
                 <div className='w-full xl:w-1/2 flex items-center justify-center mb-5 xl:mb-0'>
                   <Image
-                    src='/images/pagecover/landingpage.png'
+                    src='/images/pagecover/ourmission/1.jpg'
                     alt='Landing Page'
                     width={500}
                     height={500}
@@ -373,7 +373,7 @@ function About() {
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
                       {isExperience && (
-                        <CountUp start={0} end={50} duration={5} delay={0} />
+                        <CountUp start={0} end={54} duration={5} delay={0} />
                       )}
                       +
                     </h1>
@@ -394,7 +394,7 @@ function About() {
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
                       {isExperience && (
-                        <CountUp start={0} end={100} duration={5} delay={0} />
+                        <CountUp start={0} end={78} duration={5} delay={0} />
                       )}
                       +
                     </h1>
@@ -415,7 +415,7 @@ function About() {
                   <div className='flex flex-row space-x-5 xl:space-x-10'>
                     <h1 className='text-6xl xl:text-8xl flex justify-center items-center font-bold text-warna-gold'>
                       {isExperience && (
-                        <CountUp start={0} end={10} duration={5} delay={0} />
+                        <CountUp start={0} end={9} duration={5} delay={0} />
                       )}
                       +
                     </h1>

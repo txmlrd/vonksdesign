@@ -35,10 +35,12 @@ function Startproject() {
           Ready to bring your vision to life?
           <br /> Click the button below to start a project with us on WhatsApp!
         </p>
-        <Button className='rounded-lg bg-green-500 font-helvetica hover:bg-green-600 transition hover:text-white hover:shadow-2xl border-green-500 hover:border-green-600 shadow-inner shadow-lg px-10 py-3 mt-10'>
-          <FaWhatsapp className='mr-2' />
-          Whatsapp
-        </Button>
+        <a href='https://wa.me/+62895411695042?text=Halo,%20saya%20ingin%20memulai%20project'>
+          <Button className='rounded-lg bg-green-500 font-helvetica hover:bg-green-600 transition hover:text-white hover:shadow-2xl border-green-500 hover:border-green-600 shadow-inner shadow-lg px-10 py-3 mt-10'>
+            <FaWhatsapp className='mr-2' />
+            Whatsapp
+          </Button>
+        </a>
       </motion.div>
     </div>
   );

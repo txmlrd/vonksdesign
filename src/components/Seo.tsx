@@ -103,5 +103,5 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     href: '/favicon/safari-pinned-tab.svg',
     color: '#00e887',
   },
-  { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
+  { rel: 'shortcut icon', href: '/favicon/vonkslogo.ico' },
 ];

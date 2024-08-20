@@ -123,7 +123,7 @@ function Contact() {
               <h1 className='text-center font-helvetica xL:text-7xl text-5xl font-bold border-warna-gold '>
                 Get in touch
               </h1>
-              <p className='font-helveticalight text-xl xl:w-1/2 pt-5'>
+              <p className='font-helvetica text-xl xl:w-1/2 pt-5'>
                 We would love to hear from you! Whether you have a question
                 about our services, need a consultation, or want to discuss your
                 next project, our team is here to help.
@@ -140,13 +140,15 @@ function Contact() {
               <div className='xl:pl-10 flex flex-col xl:w-2/3'>
                 <div className='flex flex-col mb-10'>
                   <h1 className=' font-helvetica text-5xl font-bold pb-1'>
-                    Call us on WhatsApp
+                    Chat us on WhatsApp
                   </h1>
-                  <p>Give us a call for immediate assistance.</p>
+                  <p>Give us a chat for immediate assistance.</p>
                   <Button className='space-x-3 mt-5 rounded-none bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white w-fit'>
                     <FaWhatsapp />
                     <h1>
-                      <a href='tel:+6281234567890'>+62 812 3456 7890</a>
+                      <a href='https://wa.me/+62895411695042'>
+                        +62 895411695042
+                      </a>
                     </h1>
                   </Button>
                 </div>
@@ -174,8 +176,8 @@ function Contact() {
                   <Button className='space-x-3 mt-5 rounded-none bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white w-fit'>
                     <MdEmail />
                     <h1>
-                      <a href='mailto:vonksdesign@gmail.com'>
-                        vonksdesign@gmail.com
+                      <a href='mailto:galuh_pendit@yahoo.com'>
+                        galuh_pendit@yahoo.com
                       </a>
                     </h1>
                   </Button>
@@ -200,7 +202,7 @@ function Contact() {
               </div>
             </div>
             {/* START FAQ */}
-            <section className='mt-20 w-full  '>
+            <section className='mt-20 w-full '>
               <div className=' flex flex-col xl:flex-row'>
                 <div className='flex flex-col xl:w-1/2 mb-10 xl:mb-0'>
                   <h2 className='font-thin text-5xl'>FAQ</h2>

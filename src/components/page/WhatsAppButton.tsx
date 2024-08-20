@@ -36,8 +36,7 @@ const WhatsAppButton = () => {
           to chat with us on WhatsApp below !
         </p>
         <a
-          href='https://wa.me/081237299261?text=Halo%20dengan%20Vonk%20Design,%20saya%20tertarik%20untuk%20menghitung%20estimasi%20biaya%20Desain
-'
+          href='https://wa.me/+62895411695042?text=Halo,%20saya%20ingin%20bertanya%20tentang%20desain'
           target='_blank'
           rel='noopener noreferrer'
           className='mt-4 flex items-center justify-center px-4 py-2 bg-green-500 text-white rounded-full shadow-md hover:bg-green-600 transition duration-300'

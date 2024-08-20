@@ -50,14 +50,14 @@ function Footer() {
           <FaInstagram size={30} />
         </a>
         <a
-          href='mailto:vonksdesign@gmail.com'
+          href='mailto:galuh_pendit@yahoo.com'
           className='hover:scale-150 hover:animate-pulse hover:rotate-6 transition-all '
         >
           {' '}
           <MdEmail size={30} />
         </a>
         <a
-          href='tel:+6281234567890'
+          href='https://wa.me/+62895411695042'
           className='hover:scale-150 hover:animate-pulse hover:rotate-6 transition-all '
         >
           {' '}
@@ -73,7 +73,8 @@ function Footer() {
       </div>
       <p className='text-white font-helvetical text-center mt-5'>
         Jl. Tangkuban perahu III No.9 kav 11/12, Padangsambian, Kec. Denpasar
-        Bar., Kota Denpasar, Bali 80117
+        Bar., Kota Denpasar, Bali 80117 (
+        <span className='font-bold'>Rumah Kost G5</span>)
       </p>
       <div className='border-t-2 flex w-full justify-center pt-5 mt-10'>
         <p className='text-white font-helvetical'>{year} ©Vonk’s Design</p>

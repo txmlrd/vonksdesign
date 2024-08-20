@@ -276,7 +276,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                   contacting us on WhatsApp.
                 </p>
                 <a
-                  href='https://wa.me/1234567890' // Replace with your WhatsApp number
+                  href='https://wa.me/+62895411695042' // Replace with your WhatsApp number
                   className='bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-600 transition duration-300'
                 >
                   Chat with us on WhatsApp
@@ -302,7 +302,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
                   contacting us on WhatsApp.
                 </p>
                 <a
-                  href='https://wa.me/1234567890' // Replace with your WhatsApp number
+                  href='https://wa.me/+62895411695042' // Replace with your WhatsApp number
                   className='bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow hover:bg-green-600 transition duration-300'
                 >
                   Chat with us on WhatsApp
@@ -402,7 +402,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
               </div>
               <div className=''>
                 <h1 className='font-helvetica font-bold text-2xl'>
-                  50+ Project
+                  54+ Project
                 </h1>
                 <p>
                   Providing detailed and accurate budget plans to ensure
@@ -413,7 +413,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
               </div>
               <div className=''>
                 <h1 className='font-helvetica font-bold text-2xl'>
-                  100+ Satisfied Clients
+                  78+ Satisfied Clients
                 </h1>
                 <p>
                   We have built a strong reputation based on trust and client
@@ -424,7 +424,7 @@ const HomePage = ({ projects, reviews }: HomePageProps) => {
               </div>
               <div className=''>
                 <h1 className='font-helvetica font-bold text-2xl'>
-                  10+ Expert Teams
+                  9+ Expert Teams
                 </h1>
                 <p>
                   Our firm comprises over 10 specialized teams, each focusing on
