@@ -42,6 +42,9 @@ function Footer() {
           <FaSearch />
         </li> */}
       </ul>
+      <h1 className='text-white font-helvetical text-center'>
+        Find and Follow Us On :
+      </h1>
       <div className='flex flex-row  text-warna-gold space-x-3 mt-3'>
         <a
           href='https://www.instagram.com/vonks_designbali/'
@@ -64,7 +67,7 @@ function Footer() {
           <FaWhatsapp size={30} />
         </a>
         <a
-          href='https://maps.app.goo.gl/uSFofmWE7GzRBTUYA'
+          href='https://maps.app.goo.gl/4KvS6BD4bDhpGRfd8'
           className='hover:scale-150 hover:animate-pulse hover:rotate-6 transition-all '
         >
           {' '}
@@ -72,9 +75,8 @@ function Footer() {
         </a>
       </div>
       <p className='text-white font-helvetical text-center mt-5'>
-        Jl. Tangkuban perahu III No.9 kav 11/12, Padangsambian, Kec. Denpasar
-        Bar., Kota Denpasar, Bali 80117 (
-        <span className='font-bold'>Rumah Kost G5</span>)
+        Jl. Tangkuban Perahu III Gg. Padang Kangkung, Padangsambian, Kec.
+        Denpasar Barat, Kota Denpasar, Bali 80118
       </p>
       <div className='border-t-2 flex w-full justify-center pt-5 mt-10'>
         <p className='text-white font-helvetical'>{year} ©Vonk’s Design</p>

@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className='fixed bottom-4 right-4'>
+    <div className='fixed bottom-4 right-4 z-50'>
       <span className='flex absolute items-center justify-center w-16 h-16 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition duration-300 motion-safe:animate-ping'></span>
       <button
         onClick={togglePopup}

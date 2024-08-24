@@ -132,7 +132,7 @@ function Contact() {
             <div className='flex xl:flex-row flex-col  w-full justify-center '>
               <div className=' xl:pr-10 xl:border-r-2 border-b-2 pb-10   xl:pb-0 xl:border-b-0  xl:mb-0 mb-5 w-full xl:h-auto h-96  border-gray-300 '>
                 <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.377268584754!2d115.18670561110474!3d-8.655622591355634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2479a018b7225%3A0x77e8736148c7ee26!2sRumah%20Kost%20G5!5e0!3m2!1sid!2sid!4v1721445741763!5m2!1sid!2sid'
+                  src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1120.0278809928989!2d115.18948354888046!3d-8.655521852177321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2412b04d911fd%3A0xb1c53bad7f01fe6e!2sVonk&#39;s%20Design!5e0!3m2!1sen!2sid!4v1724521466854!5m2!1sen!2sid'
                   className='w-full h-full rounded-lg'
                   loading='lazy'
                 />
@@ -160,8 +160,9 @@ function Contact() {
                   <Button className='space-x-3 mt-5 rounded-none bg-transparent font-helvetica hover:bg-white hover:text-warna-abu hover:shadow-2xl border-white w-fit'>
                     <SiGooglemaps />
                     <h1>
-                      <a href='https://maps.app.goo.gl/uSFofmWE7GzRBTUYA'>
-                        Jl. Tangkuban perahu III No.9 kav 11/12
+                      <a href='https://maps.app.goo.gl/4KvS6BD4bDhpGRfd8'>
+                        Jl. Tangkuban Perahu III Gg. Padang Kangkung,
+                        Padangsambian, Bali
                       </a>
                     </h1>
                   </Button>
